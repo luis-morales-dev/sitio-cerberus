@@ -1,0 +1,3315 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+ul.list-blog {
+  list-style: none;
+}
+ul.list-blog li:before {
+  content: "✓";
+  padding-right: 5px;
+}
+
+.btn-primary {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.65rem 0.725rem;
+}
+.btn-primary:hover {
+  background-color: #cc3d00;
+  border-color: #cc3d00;
+}
+
+.heading-divider {
+  height: 2px;
+  width: 50px;
+  background-color: #FF4D00;
+  margin-bottom: 0.5rem;
+}
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #072348;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Oswald", sans-serif;
+  /*text-transform: uppercase;*/
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #FF4D00;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  /*text-transform: uppercase;*/
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: initial;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FF4D00;
+}
+#mainNav .btn-primary {
+  padding: 0.55rem 1.35rem;
+  transition: 0.4s;
+}
+#mainNav .btn-primary:hover {
+  background-color: #cc3d00;
+  border-color: #cc3d00;
+}
+#mainNav .second-row .nav-item .nav-link {
+  font-size: 0.7rem;
+}
+
+header.masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: left;
+  color: #fff;
+  background-image: url("/assets/img/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead-page {
+  height: 75vh;
+  min-height: 600px;
+  text-align: left;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header.masthead .masthead-subheading {
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+  margin-bottom: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+header.masthead h1 .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+header.masthead h1 .masthead-heading span {
+  background-color: #FF4D00;
+}
+header.masthead-page .masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.1rem;
+  margin-bottom: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+header.masthead-page .masthead-heading {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+header.masthead-page .masthead-heading span {
+  background-color: #FF4D00;
+}
+header.masthead-page .masthead-heading-blog {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+header.masthead-page .masthead-heading-blog span {
+  background-color: #FF4D00;
+}
+header.masthead-page .masthead-subheading-blog {
+  font-size: 1.1rem;
+  line-height: 1.2em;
+  margin-bottom: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+header#quienes-somos {
+  background-image: url("/assets/img/quienes_somos_bg.jpg");
+}
+header#servicios {
+  background-image: url("/assets/img/servicios_bg.jpg");
+}
+header#casos-exito {
+  background-image: url("/assets/img/casos_exito_bg.jpg");
+}
+header#envia-cv {
+  background-image: url("/assets/img/envia-tu-cv_bg.jpg");
+}
+header#maquila-nomina {
+  background-image: url("/assets/img/maquila-nomina_bg.jpg");
+}
+header#reclutamiento {
+  background-image: url("/assets/img/reclutamiento_bg.jpg");
+}
+header#capacitacion {
+  background-image: url("/assets/img/capacitacion_bg.jpg");
+}
+header.mastheading {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url("/assets/img/landing/Grupo-243.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+}
+header.mastheading h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #FFF;
+}
+header.mastheading .block-form-lp {
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  max-width: 450px;
+}
+header.mastheading .block-form-lp h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #686868;
+}
+header.mastheading .block-form-lp h2 strong {
+  color: #FF4D00;
+  font-weight: bold;
+}
+header.mastheading .block-form-lp input::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.mastheading .block-form-lp input::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.mastheading .block-form-lp input::-webkit-outer-spin-button,
+header.mastheading .block-form-lp input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+header.mastheading .block-form-lp textarea::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.mastheading .block-form-lp textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.mastheading .block-form-lp input[type=text] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.mastheading .block-form-lp input[type=email] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.mastheading .block-form-lp input[type=number] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.mastheading .block-form-lp textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #686868 !important;
+  height: 50px;
+}
+header.mastheading .block-form-lp p {
+  font-size: 1rem;
+  color: #1B1C1E;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-shadow: none;
+}
+header.mastheading .block-form-lp a {
+  color: #FF4D00;
+  text-decoration: none;
+  text-shadow: none;
+}
+header.mastheading .block-form-lp .btn:disabled {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #FFF;
+}
+header.masthead-reclutamiento {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url("/assets/img/reclutamiento/Grupo-38.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+}
+header.masthead-reclutamiento h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #FFF;
+}
+header.masthead-reclutamiento p {
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+header.masthead-reclutamiento .block-form-lp {
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  max-width: 450px;
+}
+header.masthead-reclutamiento .block-form-lp h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #686868;
+}
+header.masthead-reclutamiento .block-form-lp h2 strong {
+  color: #FF4D00;
+  font-weight: bold;
+}
+header.masthead-reclutamiento .block-form-lp input::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-reclutamiento .block-form-lp input::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-reclutamiento .block-form-lp input::-webkit-outer-spin-button,
+header.masthead-reclutamiento .block-form-lp input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+header.masthead-reclutamiento .block-form-lp textarea::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-reclutamiento .block-form-lp textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-reclutamiento .block-form-lp input[type=text] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-reclutamiento .block-form-lp input[type=email] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-reclutamiento .block-form-lp input[type=number] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-reclutamiento .block-form-lp textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #686868 !important;
+  height: 50px;
+}
+header.masthead-reclutamiento .block-form-lp p {
+  font-size: 12px;
+  color: #1B1C1E;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-shadow: none;
+}
+header.masthead-reclutamiento .block-form-lp a {
+  color: #FF4D00;
+  text-decoration: none;
+  text-shadow: none;
+}
+header.masthead-reclutamiento .block-form-lp .btn:disabled {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #FFF;
+}
+header.masthead-maquila {
+  height: 90vh;
+  min-height: 600px;
+  background-image: url("/assets/img/maquila/Grupo-95.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+}
+header.masthead-maquila h1 {
+  font-size: 55px;
+  color: #FFFFFF !important;
+  line-height: 1.4em;
+  text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+  font-family: "Oswald", sans-serif;
+  color: #FFF;
+}
+header.masthead-maquila .block-form-lp {
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  max-width: 450px;
+}
+header.masthead-maquila .block-form-lp h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #686868;
+}
+header.masthead-maquila .block-form-lp h2 strong {
+  color: #FF4D00;
+  font-weight: bold;
+}
+header.masthead-maquila .block-form-lp input::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-maquila .block-form-lp input::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-maquila .block-form-lp input::-webkit-outer-spin-button,
+header.masthead-maquila .block-form-lp input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+header.masthead-maquila .block-form-lp textarea::-moz-placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-maquila .block-form-lp textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  color: #1B1C1E !important;
+}
+header.masthead-maquila .block-form-lp input[type=text] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-maquila .block-form-lp input[type=email] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-maquila .block-form-lp input[type=number] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
+header.masthead-maquila .block-form-lp textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #686868 !important;
+  height: 50px;
+}
+header.masthead-maquila .block-form-lp p {
+  font-size: 12px;
+  color: #1B1C1E;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-shadow: none;
+}
+header.masthead-maquila .block-form-lp a {
+  color: #FF4D00;
+  text-decoration: none;
+  text-shadow: none;
+}
+header.masthead-maquila .block-form-lp h6 {
+  font-size: 1.1rem;
+  color: #1B1C1E;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+header.masthead-maquila .block-form-lp .btn:disabled {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #FFF;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.nav-logo {
+  background-color: #072348;
+  padding: 10px 0;
+}
+
+.cta-home {
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+  text-align: left;
+  color: #fff;
+  background-image: url("/assets/img/hero_02_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.cta-home h3 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding-bottom: 1.2rem;
+}
+
+.page-section .services {
+  padding: 0;
+  /*background: #FFF;*/
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+.page-section .services:hover:before {
+  opacity: 1;
+}
+.page-section .services:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 70, 0, 0.8), rgba(240, 70, 5, 0.1));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+.page-section .services .info {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  z-index: 4;
+  transition: 0.5s all;
+}
+.page-section .services .info:hover {
+  transform: translateY(-20px);
+}
+.page-section .services .info h4 {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.page-section .services .info .btn {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+}
+
+.contacto h2 {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-size: 2.1rem;
+  font-weight: 600;
+  background: #fff;
+}
+.contacto p {
+  font-family: "Open Sans", sans-serif;
+  color: #686868;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+.contacto .card {
+  border: 2px solid #FF4D00;
+  border-radius: 35px;
+  padding: 2rem 6rem;
+}
+.contacto form input {
+  border-radius: 10px;
+  border: 1px solid #b8b7b7;
+  margin-top: -0.7rem;
+}
+.contacto form input[type=text] {
+  padding: 15px;
+  width: 100%;
+}
+.contacto form input[type=email] {
+  padding: 15px;
+  width: 100%;
+}
+.contacto form input[type=tel] {
+  padding: 15px;
+  width: 100%;
+}
+.contacto form .form-label {
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #072348;
+  font-weight: 500;
+  background-color: #fff;
+}
+.contacto form .form-check .form-check-input {
+  float: left;
+  margin-left: -1.5em;
+  margin-top: 1%;
+}
+.contacto form .btn:disabled {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #FFF;
+}
+
+.enviar-cv {
+  margin-top: -9rem;
+  margin-bottom: 12rem;
+}
+.enviar-cv h2 {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.enviar-cv p {
+  font-family: "Open Sans", sans-serif;
+  color: #686868;
+  font-size: 1.2rem;
+}
+.enviar-cv a {
+  color: #072348;
+  font-weight: 700;
+}
+.enviar-cv .card {
+  border: 2px solid #FF4D00;
+  border-radius: 5px;
+  padding: 2rem 2.3rem;
+}
+.enviar-cv form input {
+  border-radius: 10px;
+  border: 1px solid #b8b7b7;
+  margin-top: -0.7rem;
+}
+.enviar-cv form input[type=text] {
+  padding: 15px;
+  width: 100%;
+}
+.enviar-cv form input[type=email] {
+  padding: 15px;
+  width: 100%;
+}
+.enviar-cv form .custom-input-file input[type=file] {
+  padding: 15px;
+}
+.enviar-cv form .custom-input-file input[type=file]::file-selector-button {
+  display: none;
+}
+.enviar-cv form .custom-input-file .btn {
+  position: absolute;
+  right: 65px;
+  border-radius: 50px !important;
+  border: 1px solid #072348 !important;
+  font-size: 1.4rem;
+  color: #072348;
+  padding: 0.1rem 0.65rem;
+  margin-top: 20px;
+}
+.enviar-cv form .custom-input-file .btn:hover {
+  color: #fff;
+  background-color: #FF4D00;
+  border: 1px solid #FF4D00 !important;
+}
+.enviar-cv form .form-label {
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #072348;
+  font-weight: 500;
+  background-color: #fff;
+}
+.enviar-cv form .form-check .form-check-input {
+  float: left;
+  margin-left: -1.5em;
+  margin-top: 1%;
+}
+.enviar-cv form .btn:disabled {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #FFF;
+}
+
+.quienes-seccion1 {
+  margin-top: -7rem;
+}
+.quienes-seccion1 b {
+  color: #072348;
+}
+.quienes-seccion1 .card {
+  padding: 0.9rem 1.1rem;
+}
+.quienes-seccion1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.servicios-seccion1 {
+  margin-top: -7rem;
+}
+.servicios-seccion1 .servicios-card {
+  background-color: #fff;
+  padding: 0.4rem 0;
+}
+.servicios-seccion1 .card {
+  height: 30rem;
+  padding: 4rem 2rem 0.5rem 1rem;
+}
+.servicios-seccion1 .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.servicios-seccion1 .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.servicios-seccion1 .card#servicio-01 {
+  background-image: url("/assets/img/servicios_card_01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.servicios-seccion1 .card#servicio-02 {
+  background-image: url("/assets/img/servicios_card_02.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.servicios-seccion1 .card#servicio-03 {
+  background-image: url("/assets/img/servicios_card_03.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.noticias {
+  background-image: url("/assets/img/fondo_noticias.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.otros-servicios {
+  background-image: url("/assets/img/servicios-content_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: contain;
+}
+.otros-servicios h4 {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  border-right: 2px solid #072348;
+  padding-right: 2rem;
+  font-weight: 700;
+}
+.otros-servicios h3 {
+  color: #FF4D00;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.otros-servicios .card {
+  border: 2px solid #FF4D00;
+  margin: 0.5rem;
+  padding: 7px;
+}
+.otros-servicios .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.otros-servicios .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.otros-servicios .card .card-text b {
+  color: #072348;
+}
+
+.casos-seccion1 {
+  margin-top: -7rem;
+}
+.casos-seccion1 b {
+  color: #072348;
+}
+.casos-seccion1 .card .card-body {
+  padding: 0.4rem 1rem;
+}
+.casos-seccion1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.casos-seccion2 {
+  padding-top: 4rem;
+}
+.casos-seccion2 h3 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.4em;
+  color: #FF4D00;
+  padding-top: 6rem;
+}
+.casos-seccion2 .text-clients h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #072348;
+  font-weight: 700;
+}
+.casos-seccion2 .text-clients .row .col-md-7 {
+  padding-left: 7%;
+}
+.casos-seccion2 .borde-cliente {
+  border-bottom: 1px solid #FF4D00;
+  padding-top: 3.3rem;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+.casos-seccion2 #img-sep {
+  padding-top: 7rem;
+}
+
+.nomina-seccion1 {
+  margin-top: -7rem;
+}
+.nomina-seccion1 b {
+  color: #072348;
+}
+.nomina-seccion1 .card {
+  padding: 0.9rem 1.1rem;
+}
+.nomina-seccion1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.nomina-content {
+  background-image: url("/assets/img/maquila-content.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: contain;
+}
+.nomina-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+}
+.nomina-content #contenido01 {
+  padding-right: 3rem;
+}
+.nomina-content .img-nomina-content img {
+  margin-top: -5rem;
+}
+.nomina-content .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-top: -5rem;
+}
+.nomina-content #serv-nomina {
+  padding-top: 9rem;
+}
+.nomina-content #serv-nomina #nomina-serv-01 {
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+.nomina-content #serv-nomina #nomina-serv-03 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.nomina-content #serv-nomina #nomina-serv-04 {
+  margin-right: 5rem;
+}
+.nomina-content .card {
+  border: 2px solid #FF4D00;
+  margin: 0.5rem;
+  padding: 7px;
+}
+.nomina-content .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  padding: 0.8rem 0;
+}
+.nomina-content .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.nomina-content .card .card-text b {
+  color: #072348;
+}
+.nomina-content #img-sep {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.nomina-content .alcances h4 {
+  font-family: "Oswald", sans-serif;
+  color: #FF4D00;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-right: 2px solid #FF4D00;
+  padding-right: 2rem;
+}
+.nomina-content .alcances ul.alcances-list {
+  list-style-image: url("/assets/img/list-icon.png");
+  padding-top: 2px;
+}
+.nomina-content .alcances ul li {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.4rem;
+  margin-bottom: 10px;
+}
+.nomina-content .alcances ul li ul.alcances-sublist {
+  list-style-image: url("/assets/img/sublist-icon.png");
+  padding-top: 2px;
+}
+.nomina-content .alcances ul li ul li {
+  color: #686868;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.nomina-content .beneficios #header {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.nomina-content .beneficios .card {
+  border: 2px solid #FF4D00;
+  margin-bottom: 1.5rem;
+  padding: 7px;
+}
+.nomina-content .beneficios .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 0;
+}
+.nomina-content .beneficios .card .card-text b {
+  color: #072348;
+}
+.nomina-content .beneficios .card ul.list-beneficios {
+  list-style: none;
+  margin-left: -15px;
+}
+.nomina-content .beneficios .card ul li {
+  background: url("/assets/img/list-icon2.png") no-repeat 5px 0px;
+  position: relative;
+  margin: 0 0 17px -60px;
+  padding-left: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+.nomina-content .beneficios #sec-02 {
+  margin-top: 5rem;
+}
+.nomina-content .beneficios #sec-03 {
+  margin-top: 10rem;
+}
+.nomina-content .beneficios2 {
+  margin-top: -5rem;
+}
+.nomina-content .beneficios2 .o-block {
+  margin-top: 0;
+  margin-left: 2rem;
+}
+.nomina-content .beneficios2 .o-block p {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.nomina-content .beneficios2 #header {
+  padding-left: 8%;
+}
+
+.maquila-beneficios {
+  background-image: url("/assets/img/nomina-beneficios-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0 3rem;
+}
+.maquila-beneficios h3 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.maquila-beneficios .beneficios {
+  margin-top: 2.5rem;
+}
+.maquila-beneficios .card {
+  background-color: rgba(8, 38, 90, 0.8);
+  border: none;
+  margin: 0 1.2rem 3.5rem;
+  padding: 0 35px 15px;
+}
+.maquila-beneficios .card .card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+.maquila-beneficios .card img {
+  margin-top: -2.5rem;
+}
+.maquila-beneficios .card .card-title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.maquila-beneficios .card .card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.maquila-beneficios .card .card-text b {
+  color: #072348;
+}
+.maquila-beneficios .card h4 {
+  padding: 0.8rem 0;
+}
+.maquila-beneficios #beneficios-card {
+  padding-top: 4rem;
+}
+.maquila-beneficios #nomina-bene-01 {
+  padding-top: 5rem;
+}
+
+.header-contacto h2 {
+  color: #FF4D00;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.reclutamiento-seccion1 {
+  margin-top: -7rem;
+}
+.reclutamiento-seccion1 b {
+  color: #072348;
+}
+.reclutamiento-seccion1 .card {
+  padding: 0.9rem 1.1rem;
+}
+.reclutamiento-seccion1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.reclutamiento-seccion2 h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+}
+.reclutamiento-seccion2 #contenido01 {
+  padding-right: 3rem;
+}
+.reclutamiento-seccion2 .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-top: -5rem;
+}
+.reclutamiento-seccion2 .img-reclu-content img {
+  margin-top: -5rem;
+}
+
+.reclutamiento-content {
+  background-image: url("/assets/img/reclutamiento-ventajas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 0 3rem;
+}
+.reclutamiento-content h3 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.reclutamiento-content .beneficios {
+  margin-top: 2.5rem;
+}
+.reclutamiento-content .card {
+  background-color: rgba(8, 38, 90, 0.8);
+  border: none;
+  margin: 0 1.2rem 3.5rem;
+  padding: 0 35px 15px;
+}
+.reclutamiento-content .card .card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+.reclutamiento-content .card img {
+  margin-top: -2.5rem;
+}
+.reclutamiento-content .card .card-title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.reclutamiento-content .card .card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.reclutamiento-content .card .card-text b {
+  color: #072348;
+}
+.reclutamiento-content .card h4 {
+  padding: 0.8rem 0;
+}
+.reclutamiento-content #reclutamiento-card {
+  padding-top: 4rem;
+}
+.reclutamiento-content #reclu-bene-01 {
+  padding-top: 5rem;
+}
+
+.reclutamiento-seccion3 {
+  background-image: url("/assets/img/reclutamiento-content_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: contain;
+}
+.reclutamiento-seccion3 .card {
+  border: 2px solid #FF4D00;
+  margin-bottom: 2.5rem;
+  padding: 7px;
+}
+.reclutamiento-seccion3 .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.reclutamiento-seccion3 .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.reclutamiento-seccion3 .card .card-text b {
+  color: #072348;
+}
+.reclutamiento-seccion3 .card h4 {
+  padding: 0.8rem 0;
+}
+.reclutamiento-seccion3 #reclu-detalles-01 {
+  padding-top: 5rem;
+}
+.reclutamiento-seccion3 #contenido01 {
+  margin-left: 7rem;
+}
+.reclutamiento-seccion3 #contenido02 {
+  margin-right: 7rem;
+}
+
+.capacitacion-seccion1 {
+  margin-top: -7rem;
+}
+.capacitacion-seccion1 b {
+  color: #072348;
+}
+.capacitacion-seccion1 .card {
+  padding: 0.9rem 1.1rem;
+}
+.capacitacion-seccion1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.capactacion-content {
+  background-image: url("/assets/img/capacitacion-content_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+}
+.capactacion-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+}
+.capactacion-content #contenido01 {
+  padding-right: 3rem;
+}
+.capactacion-content #contenido01 .row {
+  padding-top: 4rem;
+}
+.capactacion-content .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 1.6rem;
+  border-radius: 20px;
+}
+.capactacion-content .capacitacion-elecccion {
+  margin-top: 8rem;
+}
+.capactacion-content .capacitacion-elecccion h5 {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 12%;
+  margin-bottom: 4.3rem;
+}
+.capactacion-content .capacitacion-elecccion .card {
+  border: 2px solid #FF4D00;
+  margin-bottom: 2.5rem;
+  padding: 7px;
+}
+.capactacion-content .capacitacion-elecccion .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.capactacion-content .capacitacion-elecccion .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+.capactacion-content .capacitacion-elecccion .card .card-text b {
+  color: #072348;
+}
+.capactacion-content .capacitacion-elecccion .card h4 {
+  padding: 0.8rem 0;
+}
+.capactacion-content .capacitacion-elecccion #seccion01 {
+  padding-top: 4rem;
+}
+.capactacion-content .capacitacion-elecccion #seccion02 {
+  padding-top: 8rem;
+}
+
+.capacitacion-seccion2 h5 {
+  font-family: "Oswald", sans-serif;
+  color: #FF4D00;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.capacitacion-seccion2 .row {
+  padding: 4rem 0;
+}
+
+.capacitacion-modalidades {
+  padding: 5rem 0;
+}
+.capacitacion-modalidades h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.capacitacion-modalidades h3 span {
+  color: #FF4D00;
+  font-weight: 700;
+}
+.capacitacion-modalidades .modalidades-tabs {
+  padding-top: 4rem;
+}
+.capacitacion-modalidades .modalidades-tabs h4 {
+  font-family: "Oswald", sans-serif;
+  color: #FF4D00;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.capacitacion-modalidades .modalidades-tabs .nav-tabs {
+  border-bottom: 2px solid #B0B4BC;
+}
+.capacitacion-modalidades .modalidades-tabs .nav-link {
+  color: #072348;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.capacitacion-modalidades .modalidades-tabs .nav-link.active {
+  color: #072348;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 2px solid #FF4D00;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.capacitacion-modalidades .modalidades-tabs .card {
+  border: none;
+  margin-bottom: 2.5rem;
+  padding: 7px;
+  height: 235px;
+}
+.capacitacion-modalidades .modalidades-tabs .card .card-title {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+.capacitacion-modalidades .modalidades-tabs .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.capacitacion-modalidades .modalidades-tabs .card .card-text b {
+  color: #072348;
+}
+.capacitacion-modalidades .modalidades-tabs .card h4 {
+  padding: 0.8rem 0;
+}
+.capacitacion-modalidades .modalidades-tabs .feature-row p {
+  color: #FF4D00;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.capacitacion-modalidades .modalidades-tabs .cta-cap01 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: left;
+  color: #fff;
+  background-image: url("/assets/img/capacitacion_bg_02.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.capacitacion-modalidades .modalidades-tabs .cta-cap01 p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+.capacitacion-modalidades .modalidades-tabs .cta-cap01 h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+
+.capModalidades-ext {
+  background-image: url("/assets/img/entrenamiento-tab_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  padding: 3.2rem 4rem;
+}
+.capModalidades-ext .cta-cap03 h5 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #FFF;
+  width: 85%;
+}
+.capModalidades-ext .cta-cap03 .accordion-item .accordion-button {
+  font-family: "Open Sans", sans-serif;
+  color: #686868;
+  font-weight: 700;
+}
+.capModalidades-ext .cta-cap03 .accordion-item .accordion-body {
+  margin: 0 20px !important;
+  padding-left: 14px !important;
+  position: relative;
+  margin: 0;
+}
+.capModalidades-ext .cta-cap03 .accordion-item .accordion-body:before {
+  content: "";
+  background-image: url(/assets/img/landing/Grupo-119.png);
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 22px;
+}
+.capModalidades-ext .cta-cap03 .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-top: 70%;
+}
+.capModalidades-ext .cta-cap03 .o-block p {
+  margin-bottom: 0;
+}
+.capModalidades-ext .cta-cap03 .title-last {
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+.capModalidades-ext .cta-cap03 .title-last .content {
+  padding-left: 35px !important;
+  position: relative;
+  margin: 0;
+}
+.capModalidades-ext .cta-cap03 .title-last .content:before {
+  content: "";
+  background-image: url("/assets/img/arrow-title-cap.png");
+  width: 19px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 2%;
+}
+.capModalidades-ext .cta-cap03 .title-last .content h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #072348;
+}
+.capModalidades-ext .cta-cap03 .title-last .content span {
+  color: #072348;
+  font-weight: 700;
+}
+
+.cta-cap {
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+  text-align: left;
+  color: #fff;
+  background-image: url("/assets/img/capacitacion_bg_02.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.cta-cap h3 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding-bottom: 1.2rem;
+}
+
+.cap-seccion3 h4 {
+  padding: 4rem 0 1rem 5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #072348;
+}
+.cap-seccion3 h4 span {
+  font-weight: 700;
+}
+.cap-seccion3 .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 1.6rem;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #072348;
+  padding-top: 12em;
+  padding-bottom: 2rem;
+  margin-top: -9rem;
+}
+footer h5 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  padding-top: 1rem;
+}
+footer ul.contact-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+footer ul li {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8em;
+  padding: 0.4rem 0.1rem;
+}
+footer ul li.icon-map {
+  vertical-align: top;
+  list-style-image: url("/assets/img/icon-map.png");
+}
+footer ul li.icon-phone {
+  vertical-align: top;
+  list-style-image: url("/assets/img/icon-cel.png");
+}
+footer .redes p {
+  color: #fff;
+  padding-top: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+footer .redes .social-icons li {
+  display: inline;
+  padding: 0.8em;
+}
+footer .redes .social-icons li a {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  /*background-color: blueviolet;*/
+}
+footer .redes .social-icon i {
+  color: #fff;
+  line-height: 40px;
+}
+footer .copyright {
+  margin-top: 2rem;
+  padding: 2rem 0 0.5rem 0;
+  border-top: 1px solid #AFA178;
+}
+footer .copyright p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+footer#landing {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  margin-top: 0;
+}
+footer#landing p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+main .landing-sec1 {
+  background-image: url("/assets/img/landing/Grupo-243-1.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 35px;
+  padding: 5em 0;
+}
+main .landing-sec1 .info-right h2 {
+  color: #686868;
+  font-size: 31px;
+  line-height: 41px;
+  font-weight: 400;
+}
+main .landing-sec1 .info-right h2 span {
+  font-weight: 700;
+  color: #FF4D00;
+  display: block;
+}
+main .landing-sec1 .info-right p {
+  color: #686868;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+main .landing-sec1 .info-right ul {
+  color: #686868;
+  list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+}
+main .landing-sec1 .info-right ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+}
+main .landing-sec2 {
+  background-color: #082759;
+  padding: 70px 0 200px 0;
+}
+main .landing-sec2 h2 {
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 300;
+}
+main .landing-sec2 h2 span {
+  font-weight: 700;
+}
+main .landing-sec2 .elecciones {
+  margin-top: 40px;
+}
+main .landing-sec2 .card {
+  background-color: #082759;
+  border: 1px solid #FF4D00;
+  margin: 0 1.2rem 3.5rem;
+  padding: 0 15px 15px;
+}
+main .landing-sec2 .card .card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+main .landing-sec2 .card img {
+  margin-top: -2.5rem;
+}
+main .landing-sec2 .card .card-title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+main .landing-sec2 .card .card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+main .landing-sec2 .card .card-text b {
+  color: #072348;
+}
+main .landing-sec2 .card h4 {
+  padding: 0.8rem 0;
+}
+main .landing-sec3 {
+  padding-top: 35px;
+}
+main .landing-sec3 .container {
+  margin-top: -9rem;
+  background-color: #fff;
+  padding-top: 35px;
+}
+main .landing-sec3 h2 {
+  font-size: 31px;
+  color: #FF4D00;
+  margin-bottom: 35px;
+}
+main .landing-sec3 .beneficios ul {
+  list-style: none;
+  max-width: 90%;
+}
+main .landing-sec3 .beneficios ul li {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  color: #686868;
+  font-size: 20px;
+  gap: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+main .landing-sec3 .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 30px 0;
+}
+main .landing-sec3 .o-block p {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .landing-sec3 .o-block a {
+  background-color: #082759;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+main .modalidades h2 {
+  font-weight: 300;
+  font-size: 50px;
+  color: #686868;
+  margin: 35px 0;
+}
+main .modalidades h2 span {
+  color: #FF4D00;
+  font-weight: 400;
+}
+main .modalidades .link-modalidad {
+  box-shadow: 0px 15px 50px rgba(154, 150, 150, 0.1607843137);
+  background-color: #ffffff;
+  padding: 20px 40px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  cursor: pointer;
+  transition: 0.2s all;
+  margin: 0 15px;
+}
+main .modalidades .link-modalidad h2 {
+  font-size: 41px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+main .modalidades .link-modalidad h2 a {
+  color: #686868;
+  text-decoration: none;
+}
+main .modalidades #section-conf h2 {
+  color: #FF4D00;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+main .modalidades #section-conf p {
+  margin-bottom: 1.5em;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+main .modalidades .diploma .card {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1019607843);
+  max-width: 308px;
+  position: relative;
+  padding: 0px 20px 40px 20px;
+  margin: 20px auto;
+  min-height: 240px;
+  border: none;
+}
+main .modalidades .diploma .card img {
+  margin-top: -2.5rem;
+}
+main .modalidades .diploma .card .card-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #FF4D00;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 18px;
+}
+main .modalidades .diploma .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #686868;
+  text-align: center;
+  font-weight: 400;
+}
+main .modalidades .cta-modalidad {
+  background-image: url("/assets/img/landing/Enmascarar-grupo-25.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+main .modalidades .cta-modalidad p {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .modalidades .cta-modalidad a {
+  background-color: #FF4D00;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .modalidades #section-taller h2 {
+  color: #FF4D00;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+main .modalidades #section-taller p {
+  margin-bottom: 1.5em;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+main .modalidades #section-taller .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #686868;
+  text-align: center;
+  font-weight: 400;
+}
+main .modalidades .cta-modalidad2 {
+  background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+main .modalidades .cta-modalidad2 p {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .modalidades .cta-modalidad2 a {
+  background-color: #FF4D00;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .modalidades #section-entren h2 {
+  color: #FF4D00;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+main .modalidades #section-entren p {
+  margin-bottom: 1.5em;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+main .modalidades #section-entren .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #686868;
+  text-align: center;
+  font-weight: 400;
+}
+main .toggle-modalidades h2 {
+  font-size: 34px;
+  color: #686868;
+  font-weight: 400;
+}
+main .toggle-modalidades h2 span {
+  color: #FF4D00;
+  font-weight: 600;
+}
+main .toggle-modalidades .accordion-button {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  font-weight: 700;
+}
+main .toggle-modalidades .accordion-body {
+  margin: 0 20px !important;
+  padding-left: 14px !important;
+  position: relative;
+  margin: 0;
+}
+main .toggle-modalidades .accordion-body:before {
+  content: "";
+  background-image: url(/assets/img/landing/Grupo-119.png);
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+main .final-lp .info-right {
+  padding-left: 50px;
+}
+main .final-lp .info-right h2 {
+  font-size: 31px;
+  color: #1B1C1E;
+  font-weight: bold;
+}
+main .final-lp .info-right h2 span {
+  color: #FF4D00;
+}
+main .final-lp .info-right p {
+  color: #686868;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+main .final-lp .info-right ul {
+  list-style-image: url(/assets/img/landing/Grupo-198.png);
+  color: #686868;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+main .final-lp .info-right ul li {
+  margin-bottom: 10px;
+}
+main .final-lp .info-right a {
+  background-color: #FF4D00;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .reclu-sec1 {
+  background-image: url("/assets/img/reclutamiento/Enmascarar-grupo-10-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 35px;
+  padding: 5em 0;
+}
+main .reclu-sec1 .info-right h2 {
+  color: #686868;
+  font-size: 31px;
+  line-height: 41px;
+  font-weight: 400;
+}
+main .reclu-sec1 .info-right h2 span {
+  font-weight: 700;
+  color: #FF4D00;
+  display: block;
+}
+main .reclu-sec1 .info-right p {
+  color: #686868;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+main .reclu-sec1 .info-right ul {
+  color: #686868;
+  list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+}
+main .reclu-sec1 .info-right ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+}
+main .reclu-sec2 {
+  background-color: #082759;
+  padding: 70px 0 50px 0;
+}
+main .reclu-sec2 h2 {
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 300;
+}
+main .reclu-sec2 h2 span {
+  font-weight: 700;
+}
+main .reclu-sec2 .elecciones {
+  margin-top: 40px;
+}
+main .reclu-sec2 .card {
+  background-color: #082759;
+  border: 1px solid #FF4D00;
+  margin: 0 1.2rem 3.5rem;
+  padding: 0 15px 15px;
+}
+main .reclu-sec2 .card .card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+main .reclu-sec2 .card img {
+  margin-top: -2.5rem;
+}
+main .reclu-sec2 .card .card-title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+main .reclu-sec2 .card .card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+main .reclu-sec2 .card .card-text b {
+  color: #072348;
+}
+main .reclu-sec2 .card h4 {
+  padding: 0.8rem 0;
+}
+main .text-coberturas h3 {
+  font-size: 31px;
+  color: #686868;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .text-coberturas h3 span {
+  color: #FF4D00;
+  font-weight: 700;
+}
+main .text-coberturas .hover-box-vacantes {
+  transition: all 0.2s;
+  min-height: 177px !important;
+  background-size: contain !important;
+  position: relative;
+  background-image: url("/assets/img/reclutamiento/Componente-2-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+main .text-coberturas .hover-box-vacantes .et_pb_text_inner {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+main .text-coberturas .hover-box-vacantes h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+main .text-coberturas .hover-box-gerenciales {
+  transition: all 0.2s;
+  min-height: 177px !important;
+  background-size: contain !important;
+  position: relative;
+  background-image: url("/assets/img/reclutamiento/Grupo-37.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+main .text-coberturas .hover-box-gerenciales .et_pb_text_inner {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+main .text-coberturas .hover-box-gerenciales h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+main .text-coberturas .hover-box-directivos {
+  transition: all 0.2s;
+  min-height: 177px !important;
+  background-size: contain !important;
+  position: relative;
+  background-image: url("/assets/img/reclutamiento/Grupo-38-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+main .text-coberturas .hover-box-directivos .et_pb_text_inner {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+main .text-coberturas .hover-box-directivos h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+main .text-coberturas .hover-box-especializados {
+  transition: all 0.2s;
+  min-height: 177px !important;
+  background-size: contain !important;
+  position: relative;
+  background-image: url("/assets/img/reclutamiento/Grupo-39.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+main .text-coberturas .hover-box-especializados .et_pb_text_inner {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+main .text-coberturas .hover-box-especializados h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+main .cta-reclu {
+  background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+main .cta-reclu p {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .cta-reclu a {
+  background-color: #FF4D00;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .reclu-sec3 h3 span {
+  font-weight: 700;
+}
+main .reclu-sec3 ul {
+  color: #686868;
+  list-style-image: url("/assets/img/reclutamiento/Icon-awesome-check-circle.png");
+}
+main .reclu-sec3 ul li {
+  margin-bottom: 15px;
+}
+main .reclu-sec4 {
+  background-image: url("/assets/img/reclutamiento/Grupo-38-2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 35px;
+  padding: 7.6em 0;
+}
+main .reclu-sec4 .info-right h2 {
+  color: #686868;
+  font-size: 31px;
+  line-height: 41px;
+  font-weight: 400;
+}
+main .reclu-sec4 .info-right h2 span {
+  font-weight: 700;
+  color: #FF4D00;
+  display: block;
+}
+main .reclu-sec4 .info-right p {
+  color: #9c9b9b;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+main .reclu-sec4 .info-right ul {
+  color: #686868;
+  list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+}
+main .reclu-sec4 .info-right ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+}
+main .maqulp-sec1 {
+  background-image: url("/assets/img/maquila/Grupo-97.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 6em 0;
+}
+main .maqulp-sec1 .info-right h2 {
+  color: #686868;
+  font-size: 31px;
+  line-height: 41px;
+  font-weight: 400;
+}
+main .maqulp-sec1 .info-right h2 span {
+  font-weight: 700;
+  color: #FF4D00;
+  display: block;
+}
+main .maqulp-sec1 .info-right p {
+  color: #686868;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+main .maqulp-sec1 .info-right ul {
+  color: #686868;
+  list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+}
+main .maqulp-sec1 .info-right ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+}
+main .maqulp-sec2 {
+  background-color: #082759;
+  padding: 70px 0 50px 0;
+}
+main .maqulp-sec2 h2 {
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+main .maqulp-sec2 h2 span {
+  font-weight: 700;
+}
+main .maqulp-sec2 .elecciones {
+  margin-top: 40px;
+}
+main .maqulp-sec2 .card {
+  background-color: #082759;
+  border: 1px solid #FF4D00;
+  margin: 0 1.2rem 3.5rem;
+  padding: 0 15px 15px;
+}
+main .maqulp-sec2 .card .card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+main .maqulp-sec2 .card img {
+  margin-top: -2.5rem;
+}
+main .maqulp-sec2 .card .card-title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+}
+main .maqulp-sec2 .card .card-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+main .maqulp-sec2 .card .card-text b {
+  color: #072348;
+}
+main .maqulp-sec2 .card h4 {
+  padding: 0.8rem 0;
+}
+main .maqulp-sec3 .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 30px 0;
+  margin-top: -4.5rem;
+}
+main .maqulp-sec3 .o-block h2 {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .maqulp-sec3 .o-block h2 span {
+  font-weight: 600;
+}
+main .maqulp-sec3 .o-block p {
+  margin-top: 20px;
+}
+main .maqulp-sec3 .o-block a {
+  background-color: #082759;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .maqulp-sec3 .toggle-modalidades h2 {
+  font-size: 34px;
+  color: #686868;
+  font-weight: 400;
+}
+main .maqulp-sec3 .toggle-modalidades h2 span {
+  color: #FF4D00;
+  font-weight: 600;
+}
+main .maqulp-sec3 .toggle-modalidades .accordion-button {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  font-weight: 700;
+  color: #686868;
+}
+main .maqulp-sec3 .toggle-modalidades .accordion-body {
+  margin: 0 20px !important;
+  padding-left: 14px !important;
+  position: relative;
+  margin: 0;
+}
+main .maqulp-sec3 .toggle-modalidades .accordion-body ul {
+  padding: 0 0 0px 20px;
+}
+main .maqulp-sec3 .toggle-modalidades .accordion-body ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+  list-style-image: url(/assets/img/maquila/Icon-awesome-check-circle.png);
+}
+main .maqulp-sec3 .toggle-modalidades .accordion-body:before {
+  content: "";
+  background-image: url("");
+}
+main .maqulp-sec3 .alcances h4 {
+  font-family: "Oswald", sans-serif;
+  color: #FF4D00;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-right: 2px solid #FF4D00;
+  padding-right: 2rem;
+}
+main .maqulp-sec3 .alcances ul.alcances-list {
+  list-style-image: url("/assets/img/list-icon.png");
+  padding-top: 2px;
+}
+main .maqulp-sec3 .alcances ul li {
+  color: #072348;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.4rem;
+  margin-bottom: 10px;
+}
+main .maqulp-sec3 .alcances ul li ul.alcances-sublist {
+  list-style-image: url("/assets/img/maquila/Icon-awesome-check-circle.png");
+  padding-top: 2px;
+}
+main .maqulp-sec3 .alcances ul li ul li {
+  color: #686868;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+main .maqulp-sec4 .left-maquila-contar h3 {
+  font-size: 24px;
+  color: #686868;
+  font-family: "Oswald";
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+main .maqulp-sec4 .left-maquila-contar ul {
+  padding-bottom: 1em;
+}
+main .maqulp-sec4 .left-maquila-contar ul li {
+  margin-bottom: 15px;
+  list-style-image: url(/assets/img/maquila/Icon-awesome-check-circle.png);
+  font-size: 16px;
+  color: #686868;
+}
+main .maqulp-sec4 .left-maquila-contar .b-01 {
+  border-top: 1px solid #FF4D00;
+  padding-top: 15px;
+}
+main .maqulp-sec4 .left-maquila-contar .o-block {
+  background-color: #FF4D00;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+main .maqulp-sec5 h3 {
+  color: #686868;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+main .maqulp-sec5 h3 span {
+  color: #FF4D00;
+  font-weight: 700;
+}
+main .maqulp-sec5 ul {
+  color: #686868;
+  list-style-image: url("/assets/img/reclutamiento/Icon-awesome-check-circle.png");
+}
+main .maqulp-sec5 ul li {
+  margin-bottom: 15px;
+}
+main .maqulp-sec5 .row {
+  padding: 3rem;
+}
+main .cta-maqulp {
+  background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+main .cta-maqulp p {
+  color: #ffffff;
+  font-size: 31px;
+  margin: 0;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+}
+main .cta-maqulp p span {
+  font-weight: 700;
+}
+main .cta-maqulp a {
+  background-color: #FF4D00;
+  color: #ffffff;
+  padding: 14px 28px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+main .maqulp-sec6 h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 31px;
+  color: #FF4D00;
+  padding-bottom: 20px;
+}
+main .maqulp-sec6 .card {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1019607843);
+  max-width: 308px;
+  position: relative;
+  padding: 0px 20px 40px 20px;
+  margin: 20px auto;
+  min-height: 240px;
+  border: none;
+}
+main .maqulp-sec6 .card .card-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #FF4D00;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 18px;
+  padding-top: 20px;
+}
+main .maqulp-sec6 .card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #686868;
+  text-align: center;
+  font-weight: 400;
+}
+main .maqulp-sec6 .card .card-body p {
+  font-weight: 700;
+}
+main .maqulp-sec6 .card .card-body p.numero {
+  background-color: #FF4D00;
+  font-size: 32px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: -15%;
+  display: grid;
+  left: 40%;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+}
+main .maqulp-sec7 {
+  background-image: url("/assets/img/maquila/Grupo-102.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 35px;
+  padding: 7.6em 0;
+}
+main .maqulp-sec7 .info-right h2 {
+  color: #686868;
+  font-size: 31px;
+  line-height: 41px;
+  font-weight: 400;
+}
+main .maqulp-sec7 .info-right h2 span {
+  font-weight: 700;
+  color: #FF4D00;
+  display: block;
+}
+main .maqulp-sec7 .info-right p {
+  color: #9c9b9b;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+main .maqulp-sec7 .info-right ul {
+  color: #686868;
+  list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+}
+main .maqulp-sec7 .info-right ul li {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .container {
+    border-bottom: 1px solid #fafafa;
+    padding-bottom: 1.2rem;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 4.5rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: #FFF;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #FF4D00;
+  }
+  #mainNav .navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav .navbar-shrink .navbar-brand svg {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  #mainNav .dropdown-item {
+    text-transform: capitalize;
+  }
+  #mainNav #logo-web.logo-id {
+    display: none;
+  }
+  #mainNav #logo-web-alt.logo-id-alt {
+    display: block;
+  }
+  #mainNav #logo-web-alt.logo-id-alt2 {
+    display: none;
+  }
+  #mainNav #second-row.secondRow {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 1.3rem;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead h1.masthead-heading {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+  header.masthead h1.masthead-heading span {
+    background-color: #FF4D00;
+  }
+  .service-home .row-cards {
+    margin-top: -10rem;
+    margin-bottom: 1rem;
+  }
+  .service-home .row-cards .services {
+    padding: 0;
+    /*background: #FFF;*/
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+  }
+  .service-home .row-cards .services:hover:before {
+    opacity: 1;
+  }
+  .service-home .row-cards .services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 70, 0, 0.8), rgba(240, 70, 5, 0.1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+  .service-home .row-cards .services .info {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    z-index: 4;
+    transition: 0.5s all;
+  }
+  .service-home .row-cards .services .info:hover {
+    transform: translateY(-20px);
+  }
+  .service-home .row-cards .services .info h4 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+  .service-home .row-cards .services .info .btn {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+  }
+  .service-home h3 {
+    font-family: "Oswald", sans-serif;
+    color: #686868;
+    font-weight: 400;
+  }
+  .service-home h4 {
+    font-family: "Oswald", sans-serif;
+    color: #FF4D00;
+  }
+  .service-home h5 {
+    font-family: "Oswald", sans-serif;
+    color: #072348;
+    font-size: 1.9rem;
+    border-right: 2px solid #072348;
+    padding-right: 2rem;
+  }
+  .service-home .valores-list ul {
+    list-style-image: url("/assets/img/list-icon.png");
+    padding-top: 2px;
+  }
+  .service-home .valores-list ul li {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  #mainNav .navbar-brand img {
+    height: 3.5rem;
+  }
+  #mainNav .second-row {
+    display: none;
+  }
+  #mainNav .navbar-brand #logo-web-alt {
+    display: none;
+  }
+  header.masthead-page {
+    height: 60vh;
+    min-height: 500px;
+    text-align: left;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 1rem;
+    line-height: 1.1em;
+    margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+  }
+  header.masthead h1.masthead-heading {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+  }
+  header.masthead h1.masthead-heading span {
+    background-color: #FF4D00;
+  }
+  header.masthead-page .masthead-subheading {
+    font-size: 1rem;
+    line-height: 1.1em;
+    margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+  }
+  header.masthead-page .masthead-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+    font-family: "Oswald", sans-serif;
+  }
+  header.masthead-page .masthead-heading span {
+    background-color: #FF4D00;
+  }
+  header.masthead-page .masthead-heading-blog {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 2rem;
+    font-family: "Oswald", sans-serif;
+  }
+  header.masthead-page .masthead-heading-blog span {
+    background-color: #FF4D00;
+  }
+  header.masthead-page .masthead-subheading-blog {
+    font-size: 1rem;
+    line-height: 1.1em;
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+  header#quienes-somos {
+    background-image: url("/assets/img/quienes_somos_bg.jpg");
+  }
+  header#servicios {
+    background-image: url("/assets/img/servicios_bg.jpg");
+  }
+  header#casos-exito {
+    background-image: url("/assets/img/casos_exito_bg.jpg");
+  }
+  header#envia-cv {
+    background-image: url("/assets/img/envia-tu-cv_bg.jpg");
+  }
+  header#maquila-nomina {
+    background-image: url("/assets/img/maquila-nomina_bg.jpg");
+  }
+  header#reclutamiento {
+    background-image: url("/assets/img/reclutamiento_bg.jpg");
+  }
+  header#capacitacion {
+    background-image: url("/assets/img/capacitacion_bg.jpg");
+  }
+  header.mastheading {
+    height: 85vh;
+    min-height: 1150px;
+    background-image: url("/assets/img/landing/Grupo-243.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+  }
+  header.mastheading h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+  }
+  header.mastheading .block-form-lp {
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    max-width: 450px;
+  }
+  header.mastheading .block-form-lp h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #686868;
+  }
+  header.mastheading .block-form-lp h2 strong {
+    color: #FF4D00;
+    font-weight: bold;
+  }
+  header.mastheading .block-form-lp input[type=text] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.mastheading .block-form-lp input[type=email] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.mastheading .block-form-lp textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #686868 !important;
+    height: 50px;
+  }
+  header.masthead-reclutamiento {
+    height: 80vh;
+    min-height: 1150px;
+    background-image: url("/assets/img/reclutamiento/Grupo-38.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+  }
+  header.masthead-reclutamiento h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+  }
+  header.masthead-reclutamiento p {
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+    color: #fff;
+  }
+  header.masthead-reclutamiento .block-form-lp {
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    max-width: 450px;
+  }
+  header.masthead-reclutamiento .block-form-lp h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #686868;
+  }
+  header.masthead-reclutamiento .block-form-lp h2 strong {
+    color: #FF4D00;
+    font-weight: bold;
+  }
+  header.masthead-reclutamiento .block-form-lp input[type=text] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.masthead-reclutamiento .block-form-lp input[type=email] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.masthead-reclutamiento .block-form-lp textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #686868 !important;
+    height: 50px;
+  }
+  header.masthead-reclutamiento .block-form-lp p {
+    font-size: 12px;
+    color: #1B1C1E;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    text-shadow: none;
+  }
+  header.masthead-reclutamiento .block-form-lp a {
+    color: #FF4D00;
+    text-decoration: none;
+    text-shadow: none;
+  }
+  header.masthead-maquila {
+    height: 80vh;
+    min-height: 1150px;
+    background-image: url("/assets/img/maquila/Grupo-95.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+  }
+  header.masthead-maquila h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+  }
+  header.masthead-maquila .block-form-lp {
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    max-width: 450px;
+  }
+  header.masthead-maquila .block-form-lp h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #686868;
+  }
+  header.masthead-maquila .block-form-lp h2 strong {
+    color: #FF4D00;
+    font-weight: bold;
+  }
+  header.masthead-maquila .block-form-lp input[type=text] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.masthead-maquila .block-form-lp input[type=email] {
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #686868 !important;
+    border: none;
+    width: 100%;
+  }
+  header.masthead-maquila .block-form-lp textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #686868 !important;
+    height: 50px;
+  }
+  header.masthead-maquila .block-form-lp p {
+    font-size: 12px;
+    color: #1B1C1E;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    text-shadow: none;
+  }
+  header.masthead-maquila .block-form-lp a {
+    color: #FF4D00;
+    text-decoration: none;
+    text-shadow: none;
+  }
+  .service-home .row-cards {
+    margin-top: -6rem;
+    margin-bottom: 1rem;
+  }
+  .service-home .row-cards .services {
+    padding: 0;
+    /*background: #FFF;*/
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+  }
+  .service-home .row-cards .services:hover:before {
+    opacity: 1;
+  }
+  .service-home .row-cards .services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 70, 0, 0.8), rgba(240, 70, 5, 0.1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+  .service-home .row-cards .services .info {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    z-index: 4;
+    transition: 0.5s all;
+  }
+  .service-home .row-cards .services .info:hover {
+    transform: translateY(-20px);
+  }
+  .service-home .row-cards .services .info h4 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-left: 0;
+  }
+  .service-home .row-cards .services .info .btn {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+  }
+  .service-home .row .services {
+    margin-top: 1rem;
+  }
+  .service-home .row h3 {
+    font-family: "Oswald", sans-serif;
+    color: #686868;
+    font-weight: 400;
+  }
+  .service-home .row h4 {
+    font-family: "Oswald", sans-serif;
+    color: #FF4D00;
+    padding-left: 15px;
+  }
+  .service-home .row h5 {
+    font-family: "Oswald", sans-serif;
+    color: #072348;
+    font-size: 1.9rem;
+    border-right: 2px solid #072348;
+    padding-right: 2rem;
+  }
+  .service-home .valores-list ul {
+    list-style-image: url("/assets/img/list-icon.png");
+    padding-top: 2px;
+  }
+  .service-home .valores-list ul li {
+    margin-bottom: 10px;
+  }
+  .otros-servicios .bene img {
+    display: block;
+    margin: 0 auto;
+  }
+  .otros-servicios .bene p {
+    text-align: center;
+  }
+  .casos-seccion2 h3 {
+    padding-top: 4rem;
+    font-size: 1.2rem;
+  }
+  .casos-seccion2 .text-clients h4 {
+    padding-top: 30px;
+  }
+  .capModalidades-ext {
+    padding: 1rem 1.2rem;
+  }
+  .capModalidades-ext .cta-cap03 .o-block {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .enviar-cv .card {
+    padding: 1rem 0.7rem;
+  }
+  .enviar-cv .card .card-body p {
+    font-size: 0.8rem;
+  }
+  .enviar-cv form .custom-input-file .btn {
+    position: absolute;
+    right: 45px;
+    border-radius: 50px !important;
+    border: 1px solid #072348 !important;
+    font-size: 1.3rem;
+    line-height: 0.7em;
+    color: #072348;
+    padding: 0.65rem;
+    margin-top: 22px;
+  }
+  .capacitacion-modalidades .modalidades-tabs .card {
+    height: 320px;
+  }
+  .nomina-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.6rem;
+  }
+  .nomina-content .o-block {
+    padding: 0.5rem 0.4rem;
+    padding: 0.5rem 0.4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  .nomina-content .beneficios #sec-02 {
+    margin-top: 0rem;
+  }
+  .nomina-content .beneficios #sec-03 {
+    margin-top: 0rem;
+  }
+  .nomina-content .beneficios2 {
+    margin-top: 1rem;
+  }
+  .nomina-content .beneficios2 .o-block {
+    margin-top: 0;
+    /* margin-left: 2rem; */
+    margin: 0 0.3rem;
+  }
+  .nomina-content #serv-nomina {
+    padding-top: 3rem;
+  }
+  .nomina-content #serv-nomina #nomina-serv-01 {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+  .nomina-content #serv-nomina #nomina-serv-04 {
+    margin-right: 0rem;
+  }
+  .maquila-beneficios h3 {
+    font-size: 2rem;
+  }
+  .header-contacto h2 {
+    color: #FF4D00;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+  }
+  .reclutamiento-seccion2 .o-block {
+    padding: 1rem 1rem;
+    margin-top: 0rem;
+  }
+  .reclutamiento-seccion3 #contenido01 {
+    margin-left: 0rem;
+  }
+  .reclutamiento-content h3 {
+    font-size: 1.6rem;
+  }
+  .contacto p {
+    width: 100%;
+  }
+  .contacto .card {
+    padding: 1rem 1.2rem;
+  }
+  .contacto h2 {
+    font-size: 1.3rem;
+  }
+  footer .copyright p {
+    text-align: center;
+  }
+  footer .copyright img {
+    margin: 0 auto;
+    float: none !important;
+    padding: 15px 0;
+  }
+  main .landing-sec1 {
+    background-position: center right;
+  }
+  main .maqulp-sec1 {
+    background-position: center right;
+  }
+  main .maqulp-sec7 {
+    background-position: center right;
+  }
+  main .reclu-sec1 {
+    background-position: center right;
+  }
+  main .text-coberturas .hover-box-vacantes {
+    margin-bottom: 10px;
+  }
+  main .text-coberturas .hover-box-gerenciales {
+    margin-bottom: 10px;
+  }
+  main .text-coberturas .hover-box-directivos {
+    margin-bottom: 10px;
+  }
+  main .text-coberturas .hover-box-especializados {
+    margin-bottom: 10px;
+  }
+  main .reclu-sec4 {
+    background-position: center right;
+    padding: 4.6em 0;
+  }
+  .display-7 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3em;
+    padding: 35px 0;
+  }
+}
+.float_buttons_div {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  z-index: 10;
+}
+
+.float_buttons_div li {
+  list-style: none;
+  margin: 15px 0px;
+}
+
+.float_buttons_div li a i {
+  text-decoration: none;
+  padding: 0.3em;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.float_buttons_div .phone-icon {
+  background-color: #092F57;
+  border: 1px solid #092F57;
+  box-shadow: 2px 2px 50px #333;
+  /* Lo ocultamos solo en vista de escritorio */
+  visibility: hidden;
+}
+
+.float_buttons_div .whatsapp-icon {
+  background-color: #25d366;
+  border: 1px solid #25d366;
+  box-shadow: 2px 4px 20px #333;
+}
+
+.preblog h2 {
+  color: #FF4D00;
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+.preblog ul {
+  list-style-image: url("/assets/img/list-icon.png");
+  padding-top: 2px;
+}
+.preblog ul li {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  color: #212529;
+}
+
+.blog {
+  margin-bottom: 1rem;
+}
+.blog .card .card-title {
+  font-family: "Oswald", sans-serif;
+  color: #072348;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: #fff;
+}
+.blog .card .card-text {
+  color: #212529;
+}
+.blog .card .btn-blog {
+  background-color: transparent;
+  border-color: #FF4D00;
+  color: #FF4D00;
+  font-family: "Oswald", sans-serif;
+}
+.blog p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.blog span {
+  color: #FF4D00;
+}
+.blog .btn-primary-blog {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 15px 0;
+}
+
+.single-post {
+  margin-bottom: 1rem;
+}
+.single-post .card-header {
+  background-color: #FFF;
+  color: #FF4D00;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.single-post ul li a {
+  color: #1B1C1E;
+}
+.single-post ul li a:link {
+  text-decoration: none;
+}
+.single-post p {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
+}
+.single-post span {
+  color: #FF4D00;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.1em;
+}
+.single-post ul li {
+  line-height: 1.2em;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #212529;
+  font-family: "Open Sans", sans-serif;
+}
+.single-post .btn-primary-blog {
+  background-color: #FF4D00;
+  border-color: #FF4D00;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 15px 0;
+}
+.single-post .titulo-1 {
+  color: #FF4D00;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+}
+.single-post .display-7 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  padding: 15px 0;
+}
+.single-post .display-8 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+.single-post .bloque-blog-final p {
+  font-size: 1.8rem;
+  margin: 0 15%;
+}/*# sourceMappingURL=style.css.map */

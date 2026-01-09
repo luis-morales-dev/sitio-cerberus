@@ -1,0 +1,3578 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+                
+$primary-font: "Oswald", sans-serif;
+$secondary-font: 'Helvetica Neue', sans-serif;
+$third-font: "Open Sans", sans-serif;
+                                                
+
+$base-color: #FF4D00;
+$barely-base-color: #cc3d00;
+$secondary-color: #072348;
+$text-color:#212529;
+$barely-secondary-color: rgba(8, 38, 90, .8);
+
+h1, h2, h3 {
+    font-family: $primary-font;
+    color: $secondary-color;
+    font-weight: 600;
+}
+
+p{
+    font-family: $third-font;
+    font-weight: 500;
+}
+
+ul.list-blog{
+    list-style: none;
+    li:before {
+        content: '✓';
+        padding-right: 5px;
+    }
+}
+
+.btn-primary{
+    background-color: $base-color;
+    border-color: $base-color;
+    color: #fff;
+    font-family: $third-font;
+    padding: 0.65rem 0.725rem;
+    &:hover{
+        background-color: $barely-base-color;
+        border-color: $barely-base-color;
+    }
+}
+
+.heading-divider {
+    height: 2px;
+    width: 50px;
+    background-color: $base-color;
+    margin-bottom: .5rem;
+}
+
+
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $secondary-color;
+    .navbar-toggler {
+        padding: 0.75rem;
+        font-size: 0.75rem;
+        font-family: $primary-font;
+        /*text-transform: uppercase;*/
+        font-weight: 700;
+    }
+    .navbar-brand {
+        color: $base-color;
+        font-family: $secondary-font;
+        font-weight: 400;
+        letter-spacing: 0.0625em;
+        /*text-transform: uppercase;*/
+    }
+    .navbar-brand img {
+        height: 1.5rem;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-family: $third-font;
+        font-size: 0.9rem;
+        color: #fff;
+        font-weight: 400;
+        text-transform: initial;
+    }
+    .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: $base-color;
+    }
+    .btn-primary{
+        padding: 0.55rem 1.35rem;
+        transition:0.4s;
+        &:hover {
+            background-color: $barely-base-color;
+            border-color: $barely-base-color;
+          }
+    }
+    .second-row{
+        .nav-item{
+            .nav-link{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+  }
+
+  header{
+    &.masthead {
+        padding-top: 10.5rem;
+        padding-bottom: 6rem;
+        text-align: left;
+        color: #fff;
+        background-image: url("/assets/img/hero_bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+    &.masthead-page {
+        height: 75vh;
+        min-height: 600px;
+        text-align: left;
+        color: #fff; 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &.masthead .masthead-subheading {
+        font-size: 1.4rem;
+        line-height: 1.1rem;
+        margin-bottom: 25px;
+        font-family: $third-font;
+        
+    }
+    &.masthead h1 .masthead-heading {
+        font-size: 3.25rem;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        font-family: $primary-font;
+        span{
+            background-color: $base-color;
+        }
+    }
+    &.masthead-page .masthead-subheading {
+        font-size: 1.5rem;
+        line-height: 1.1rem;
+        margin-bottom: 25px;
+        font-family: $third-font;
+    }
+    &.masthead-page .masthead-heading {
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 1.4em;
+        margin-bottom: 2rem;
+        font-family: $primary-font;
+        span{
+            background-color: $base-color;
+        }
+    }
+    &.masthead-page .masthead-heading-blog {
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-bottom: 2rem;
+        font-family: $primary-font;
+        span{
+            background-color: $base-color;
+        }
+    }
+    &.masthead-page .masthead-subheading-blog{
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        margin-bottom: 25px;
+        font-family: $third-font;
+    }
+    &#quienes-somos{
+        background-image: url("/assets/img/quienes_somos_bg.jpg");
+    }
+    &#servicios{
+        background-image: url("/assets/img/servicios_bg.jpg");
+    }
+    &#casos-exito{
+        background-image: url("/assets/img/casos_exito_bg.jpg");
+    }
+    &#envia-cv{
+        background-image: url("/assets/img/envia-tu-cv_bg.jpg");
+    }
+    &#maquila-nomina{
+        background-image: url("/assets/img/maquila-nomina_bg.jpg");
+    }
+    &#reclutamiento{
+        background-image: url("/assets/img/reclutamiento_bg.jpg");
+    }
+    &#capacitacion{
+        background-image: url("/assets/img/capacitacion_bg.jpg");
+    }
+    &.mastheading {
+        height: 90vh;
+        min-height: 600px;
+        background-image: url('/assets/img/landing/Grupo-243.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 35px;
+        h1{
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 65px;
+            margin-bottom: 2rem;
+            font-family: $primary-font;
+            color: #FFF;
+        }
+        .block-form-lp {
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            max-width: 450px;
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 300;
+                color: #686868;
+                strong {
+                    color: #FF4D00;
+                    font-weight: bold;
+                }
+            }
+            input::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            textarea::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input[type=text]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=email]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=number]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            textarea {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #686868 !important;
+                height: 50px;
+            }
+            p{
+                font-size: 1rem;
+                color: #1B1C1E;
+                font-weight: 400;
+                font-family: $primary-font;
+                text-shadow: none;
+            }
+            a{
+                color: $base-color;
+                text-decoration: none;
+                text-shadow: none;
+            }
+            .btn:disabled{
+                background-color: $base-color;
+                border-color: $base-color;
+                color: #FFF;
+            }
+        }
+        
+    }
+    &.masthead-reclutamiento{
+        height: 90vh;
+        min-height: 600px;
+        background-image: url('/assets/img/reclutamiento/Grupo-38.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 35px;
+        h1{
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-bottom: 2rem;
+            font-family: $primary-font;
+            color: #FFF;
+        }
+        p{
+            line-height: 24px;
+            font-family: $third-font;
+            font-size: 19px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+            color: #fff;
+        }
+        .block-form-lp {
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            max-width: 450px;
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 300;
+                color: #686868;
+                strong {
+                    color: #FF4D00;
+                    font-weight: bold;
+                }
+            }
+            input::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            textarea::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input[type=text]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=email]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=number]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            textarea {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #686868 !important;
+                height: 50px;
+            }
+            p{
+                font-size: 12px;
+                color: #1B1C1E;
+                font-weight: 400;
+                font-family: $primary-font;
+                text-shadow: none;
+            }
+            a{
+                color: $base-color;
+                text-decoration: none;
+                text-shadow: none;
+            }
+            .btn:disabled{
+                background-color: $base-color;
+                border-color: $base-color;
+                color: #FFF;
+            }
+        }
+    }
+    &.masthead-maquila{
+        height: 90vh;
+        min-height: 600px;
+        background-image: url('/assets/img/maquila/Grupo-95.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 35px;
+        h1{
+            font-size: 55px;
+            color: #FFFFFF !important;
+            line-height: 1.4em;
+            text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+            font-family: $primary-font;
+            color: #FFF;
+        }
+        .block-form-lp {
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            max-width: 450px;
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 300;
+                color: #686868;
+                strong {
+                    color: #FF4D00;
+                    font-weight: bold;
+                }
+            }
+            input::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            textarea::placeholder {
+                font-family: $primary-font;
+                color: #1B1C1E!important;
+            }
+            input[type=text]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=email]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            input[type=number]{
+                height: 40px;
+                background-color: transparent;
+                border-bottom: 1px solid #686868 !important;
+                border: none;
+                width: 100%;
+            }
+            textarea {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #686868 !important;
+                height: 50px;
+            }
+            p{
+                font-size: 12px;
+                color: #1B1C1E;
+                font-weight: 400;
+                font-family: $primary-font;
+                text-shadow: none;
+            }
+            a{
+                color: $base-color;
+                text-decoration: none;
+                text-shadow: none;
+            }
+            h6{
+                font-size: 1.1rem;
+                color: #1B1C1E;
+                font-weight: 400;
+                font-family: $primary-font;
+            }
+            .btn:disabled{
+                background-color: $base-color;
+                border-color: $base-color;
+                color: #FFF;
+            }
+            
+        }
+    } 
+
+  }
+
+  section{
+    padding: 2rem 0;
+  }
+
+  .nav-logo{
+    background-color: $secondary-color;
+    padding: 10px 0;
+  }
+
+  .cta-home {
+    padding-top: 10rem;
+    padding-bottom: 13rem;
+    text-align: left;
+    color: #fff;
+    background-image: url("/assets/img/hero_02_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    h3{
+        color: #fff;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: 1.2rem;
+    }
+  }
+
+  .page-section{
+    .services{
+        padding: 0;
+        /*background: #FFF;*/
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+        &:hover{
+            &:before{
+                opacity: 1;
+            }
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(255,70,0,0.8), rgba(240,70,5,0.1));
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;
+        }
+        .info{
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            z-index: 4;
+            transition: 0.5s all;
+            &:hover{
+                transform: translateY(-20px);
+            }
+            h4{
+                color: #FFF;
+                font-family: $third-font;
+                font-weight: 700;
+            }
+            .btn{
+                color: #FFF;
+                font-family: $third-font;
+                padding: 0;
+            }
+        }
+    }
+  }
+
+  .contacto{
+    h2 {
+        font-family: $primary-font;
+        color: $secondary-color;
+        font-size: 2.1rem;
+        font-weight: 600;
+        background: #fff;
+    }
+    p {
+        font-family: $third-font;
+        color: #686868;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 12px;
+        
+    }
+    .card {
+        border: 2px solid $base-color;
+        border-radius: 35px;
+        padding: 2rem 6rem;
+    }
+    form{
+        input{
+            border-radius: 10px;
+            border: 1px solid #b8b7b7;
+            margin-top: -.7rem;
+        }
+        input[type=text]{
+            padding: 15px;
+            width: 100%;
+        }
+        input[type=email]{
+            padding: 15px;
+            width: 100%;
+        }
+        .form-label {
+            margin-bottom: 0rem;
+            padding-left: 1rem;
+            font-family: $third-font;
+            color: $secondary-color;
+            font-weight: 500;
+            background-color: #fff;
+        }
+        .form-check {
+            .form-check-input {
+                float: left;
+                margin-left: -1.5em;
+                margin-top: 1%;
+            }
+        }
+        .btn:disabled{
+            background-color: $base-color;
+            border-color: $base-color;
+            color: #FFF;
+        }
+    }
+  }
+
+  .enviar-cv{
+    margin-top: -9rem;
+    margin-bottom: 12rem;
+    h2 {
+        font-family: $primary-font;
+        color: $secondary-color;
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    p {
+        font-family: $third-font;
+        color: #686868;
+        font-size: 1.2rem;
+    }
+    a{
+        color: $secondary-color;
+        font-weight: 700;
+    }
+    .card {
+        border: 2px solid $base-color;
+        border-radius: 5px;
+        padding: 2rem 2.3rem;
+    }
+    form{
+        input{
+            border-radius: 10px;
+            border: 1px solid #b8b7b7;
+            margin-top: -.7rem;
+        }
+        input[type=text]{
+            padding: 15px;
+            width: 100%;
+        }
+        input[type=email]{
+            padding: 15px;
+            width: 100%;
+        }
+        .custom-input-file{
+            input[type=file]{
+                padding: 15px;
+                &::-webkit-file-upload-button {
+                    display: none;
+                }
+                &::file-selector-button {
+                    display: none;
+                }
+            }
+            .btn{
+                position: absolute;
+                right: 65px;
+                border-radius: 50px !important;
+                border: 1px solid #072348 !important;
+                font-size: 1.4rem;
+                color: #072348;
+                padding: 0.1rem 0.65rem;
+                margin-top: 20px;
+                &:hover{
+                    color: #fff;
+                    background-color: $base-color;
+                    border: 1px solid $base-color!important;
+                }
+            }
+        }
+        .form-label {
+            margin-bottom: 0rem;
+            padding-left: 1rem;
+            font-family: $third-font;
+            color: $secondary-color;
+            font-weight: 500;
+            background-color: #fff;
+        }
+        .form-check {
+            .form-check-input {
+                float: left;
+                margin-left: -1.5em;
+                margin-top: 1%;
+            }
+        }
+        .btn:disabled{
+            background-color: $base-color;
+            border-color: $base-color;
+            color: #FFF;
+        }
+    }
+  }
+
+  .quienes-seccion1{
+    margin-top: -7rem;
+    b{
+        color: $secondary-color;
+    }
+    .card{
+        padding: .9rem 1.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+  }
+
+.servicios-seccion1{
+    margin-top: -7rem;
+    .servicios-card{
+        background-color: #fff;
+        padding: .4rem 0;
+    }
+    .card{
+        height: 30rem;
+        padding: 4rem 2rem .5rem 1rem;
+        .card-title{
+            color: $secondary-color;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+        }
+        .card-text{
+            font-family: $third-font;
+            font-size: 0.9rem;
+        }
+        &#servicio-01{
+            background-image: url("/assets/img/servicios_card_01.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+        &#servicio-02{
+            background-image: url("/assets/img/servicios_card_02.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+        &#servicio-03{
+            background-image: url("/assets/img/servicios_card_03.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}
+
+.noticias{
+    background-image: url("/assets/img/fondo_noticias.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.otros-servicios{
+            background-image: url("/assets/img/servicios-content_bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center bottom;
+            background-size: contain;
+    h4{
+        font-family: $primary-font;
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        border-right: 2px solid $secondary-color;
+        padding-right: 2rem;
+        font-weight: 700;
+    }
+    h3{
+        color: $base-color;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .card{
+        border: 2px solid $base-color;
+        margin: .5rem;
+        padding: 7px;
+        .card-title{
+            color: $secondary-color;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+        }
+        .card-text{
+            font-family: $third-font;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            b{
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.casos-seccion1{
+    margin-top: -7rem;
+    b{
+        color: $secondary-color;
+    }
+    .card{
+        .card-body{
+            padding: .4rem 1rem;
+        }
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.casos-seccion2{
+    padding-top: 4rem;
+    h3{
+        font-family: $primary-font;
+        line-height: 1.4em;
+        color: $base-color;
+        padding-top: 6rem;
+    }
+    .text-clients{
+        h4{
+            font-family: $third-font;
+            color: $secondary-color;
+            font-weight: 700;
+        }
+        .row{
+            .col-md-7{
+                padding-left: 7%;
+            }
+        }
+    }
+    .borde-cliente{
+        border-bottom: 1px solid $base-color;
+        padding-top: 3.3rem;
+        margin-bottom: 3rem;
+        width: 90%;
+    }
+    #img-sep{
+        padding-top: 7rem;
+    }
+}
+
+.nomina-seccion1{
+    margin-top: -7rem;
+    b{
+        color: $secondary-color;
+    }
+    .card{
+        padding: .9rem 1.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+  }
+
+  .nomina-content{
+    background-image: url("/assets/img/maquila-content.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: contain;
+    h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-bottom: 1.6rem;
+    }
+    #contenido01{
+        padding-right: 3rem;
+    }
+    .img-nomina-content{
+        img{
+            margin-top: -5rem;
+        }
+    }
+    .o-block{
+        background-color: $base-color;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        margin-top: -5rem;
+    }
+    #serv-nomina{
+        padding-top: 9rem;
+        #nomina-serv-01{
+            margin-left: 5rem;
+            margin-bottom: 2rem;
+        }
+        #nomina-serv-03{
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+        #nomina-serv-04{
+            margin-right: 5rem;
+        }
+    }
+    .card{
+        border: 2px solid $base-color;
+        margin: .5rem;
+        padding: 7px;
+        .card-title{
+            color: $secondary-color;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+            padding: 0.8rem 0;
+        }
+        .card-text{
+            font-family: $third-font;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            b{
+                color: $secondary-color;
+            }
+        }
+    }
+    #img-sep{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .alcances{
+        h4{
+            font-family: $primary-font;
+                color: $base-color;
+                font-size: 1.8rem;
+                font-weight: 700;
+                border-right: 2px solid $base-color;
+                padding-right: 2rem;
+        }
+        ul{
+            &.alcances-list{
+                list-style-image: url('/assets/img/list-icon.png');
+                padding-top: 2px;
+            }
+            li{
+                color: $secondary-color;
+                font-family: $third-font;
+                font-size: 1.1rem;
+                font-weight: 700;
+                padding: .4rem;
+                margin-bottom: 10px;
+                ul{
+                    &.alcances-sublist{
+                        list-style-image: url('/assets/img/sublist-icon.png');
+                        padding-top: 2px;
+                    }
+                    li{
+                        color: #686868;
+                        font-weight: 400;
+                        font-size: .9rem;
+                    }
+                }
+            } 
+        }
+    }
+    .beneficios{
+        #header{
+            font-family: $primary-font;
+            color: $secondary-color;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        .card{
+            border: 2px solid $base-color;
+            margin-bottom: 1.5rem;
+            padding: 7px;
+            .card-text{
+                font-family: $third-font;
+                font-size: 1rem;
+                padding-bottom: 0;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            ul{
+                &.list-beneficios{
+                    list-style: none;
+                    margin-left: -15px;
+                }
+                li{
+                    background: url('/assets/img/list-icon2.png') no-repeat 5px 0px;
+                    position: relative;
+                    margin: 0 0 17px -60px;
+                    padding-left: 40px;
+                    font-family: $third-font;
+                    font-size: 1rem;
+                    color: #333;
+                }
+            }
+        }
+        #sec-02{
+            margin-top: 5rem;
+        }
+        #sec-03{
+            margin-top: 10rem;
+        }
+    }
+    .beneficios2{
+        margin-top: -5rem;
+        .o-block{
+            margin-top: 0;
+            margin-left: 2rem;
+            p{
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+        }
+        #header{
+            padding-left: 8%;
+        }
+    }
+    
+  }
+  .maquila-beneficios{
+    background-image: url("/assets/img/nomina-beneficios-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0 3rem;
+    h3{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .beneficios{
+        margin-top: 2.5rem;
+    }
+    .card{
+        background-color: $barely-secondary-color;
+        border: none;
+        margin: 0 1.2rem 3.5rem;
+        padding: 0 35px 15px;
+        .card-body{
+            padding: 0 1rem 1rem 1rem;
+        }
+        img{
+            margin-top: -2.5rem;
+        }
+        .card-title{
+            color: #fff;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+        }
+        .card-text{
+            color: #fff;
+            font-family: $third-font;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            b{
+                color: $secondary-color;
+            }
+        }
+        h4{
+            padding: 0.8rem 0;
+        }
+    }
+    #beneficios-card{
+        padding-top: 4rem;
+    }
+    #nomina-bene-01{
+        padding-top: 5rem;
+    }
+  }
+
+  .header-contacto{
+    h2{
+        color: $base-color;
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 2rem 0;
+    }
+    
+  }
+
+  .reclutamiento-seccion1{
+    margin-top: -7rem;
+    b{
+        color: $secondary-color;
+    }
+    .card{
+        padding: .9rem 1.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+  }
+
+  .reclutamiento-seccion2{
+    h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-bottom: 1.6rem;
+    }
+    #contenido01{
+        padding-right: 3rem;
+    }
+    .o-block{
+        background-color: $base-color;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        margin-top: -5rem;
+    }
+    .img-reclu-content{
+        img{
+            margin-top: -5rem;
+        }
+    }
+  }
+
+  .reclutamiento-content{
+    background-image: url("/assets/img/reclutamiento-ventajas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0 3rem;
+    h3{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .beneficios{
+        margin-top: 2.5rem;
+    }
+    .card{
+        background-color: $barely-secondary-color;
+        border: none;
+        margin: 0 1.2rem 3.5rem;
+        padding: 0 35px 15px;
+        .card-body{
+            padding: 0 1rem 1rem 1rem;
+        }
+        img{
+            margin-top: -2.5rem;
+        }
+        .card-title{
+            color: #fff;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+        }
+        .card-text{
+            color: #fff;
+            font-family: $third-font;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            b{
+                color: $secondary-color;
+            }
+        }
+        h4{
+            padding: 0.8rem 0;
+        }
+    }
+    #reclutamiento-card{
+        padding-top: 4rem;
+    }
+    #reclu-bene-01{
+        padding-top: 5rem;
+    }
+  }
+
+  .reclutamiento-seccion3{
+    background-image: url("/assets/img/reclutamiento-content_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-size: contain;
+    .card{
+        border: 2px solid $base-color;
+        margin-bottom: 2.5rem;
+        padding: 7px;
+        .card-title{
+            color: $secondary-color;
+            font-family: $third-font;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            font-weight: 700;
+        }
+        .card-text{
+            font-family: $third-font;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+            b{
+                color: $secondary-color;
+            }
+        }
+        h4{
+            padding: 0.8rem 0;
+        }
+    }
+    #reclu-detalles-01{
+        padding-top: 5rem;
+    }
+    #contenido01{
+        margin-left: 7rem;
+        
+    }
+    #contenido02{
+        margin-right: 7rem;
+    }
+  }
+
+  .capacitacion-seccion1{
+    margin-top: -7rem;
+    b{
+        color: $secondary-color;
+    }
+    .card{
+        padding: .9rem 1.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+  }
+
+  .capactacion-content{
+    background-image: url("/assets/img/capacitacion-content_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding-bottom: 1.6rem;
+    }
+    #contenido01{
+        padding-right: 3rem;
+        .row{
+            padding-top: 4rem;
+        }
+    }
+    .o-block{
+        background-color: $base-color;
+        color: #fff;
+        padding: 1rem 1.6rem;
+        border-radius: 20px;
+    }
+    .capacitacion-elecccion{
+        margin-top: 8rem;
+        h5{
+            font-family: $primary-font;
+            color: $secondary-color;
+            font-size: 2rem;
+            font-weight: 400;
+            padding-left: 12%;
+            margin-bottom: 4.3rem;
+        }
+        .card{
+            border: 2px solid $base-color;
+            margin-bottom: 2.5rem;
+            padding: 7px;
+            .card-title{
+                color: $secondary-color;
+                font-family: $third-font;
+                font-size: 1.3rem;
+                line-height: 1.7rem;
+                font-weight: 700;
+            }
+            .card-text{
+                font-family: $third-font;
+                font-size: 1rem;
+                padding-bottom: 2rem;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            h4{
+                padding: 0.8rem 0;
+            }
+        }
+        #seccion01{
+            padding-top: 4rem;
+        }
+        #seccion02{
+            padding-top: 8rem;
+        }
+    }
+    
+  }
+
+  .capacitacion-seccion2{
+    h5{
+        font-family: $primary-font;
+        color: $base-color;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    .row{
+        padding: 4rem 0;
+    }
+  }
+
+  .capacitacion-modalidades{
+    padding: 5rem 0 ;
+    h3{
+        font-size: 3rem;
+        font-weight: 400;
+        span{
+            color: $base-color;
+            font-weight: 700;
+        }
+    }
+    .modalidades-tabs{
+        padding-top: 4rem;
+        h4{
+            font-family: $primary-font;
+            color: $base-color;
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+        .nav-tabs{
+            border-bottom: 2px solid #B0B4BC;
+        }
+        .nav-link{
+            color: $secondary-color;
+            font-weight: 500;
+            font-family: $third-font;
+            &.active{
+                color: $secondary-color;
+                font-weight: 600;
+                font-family: $third-font;
+                border-bottom: 2px solid $base-color;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+        .card{
+            border: none;
+            margin-bottom: 2.5rem;
+            padding: 7px;
+            height: 235px;
+            .card-title{
+                color: $secondary-color;
+                font-family: $third-font;
+                font-size: 1.3rem;
+                line-height: 1.7rem;
+                font-weight: 700;
+            }
+            .card-text{
+                font-family: $third-font;
+                font-size: 1rem;
+                padding-bottom: 1rem;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            h4{
+                padding: 0.8rem 0;
+            }
+        }
+        .feature-row{
+            p{
+                color: $base-color;
+                font-family: $third-font;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+        .cta-cap01 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            text-align: left;
+            color: #fff;
+            background-image: url("/assets/img/capacitacion_bg_02.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            p{
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 1.9rem;
+            }
+            h5{
+                font-family: $primary-font;
+                font-weight: 700;
+                font-size: 2.1rem;
+            }
+        }
+        
+    }
+    
+  }
+
+  .capModalidades-ext{
+        background-image: url("/assets/img/entrenamiento-tab_bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        padding: 3.2rem 4rem;
+    .cta-cap03 {
+        
+        h5{
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: #FFF;
+            width: 85%;
+        }
+        .accordion-item{
+            .accordion-button{
+                font-family: $third-font;
+                color:#686868;
+                font-weight: 700;
+            }
+            .accordion-body{
+                margin: 0 20px!important;
+                padding-left: 14px !important;
+                position: relative;
+                margin: 0;
+                &:before {
+                    content: "";
+                    background-image: url(/assets/img/landing/Grupo-119.png);
+                    width: 10px;
+                    height: 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    top: 22px;
+                }
+            }
+        }
+        
+        .o-block{
+            background-color: $base-color;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 20px;
+            margin-top: 70%;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        
+        .title-last{
+            padding-top: 4rem;
+            padding-left: 1rem;
+            .content{
+                padding-left: 35px !important;
+                position: relative;
+                margin: 0;
+                &:before {
+                    content: "";
+                    background-image: url('/assets/img/arrow-title-cap.png');
+                    width: 19px;
+                    height: 28px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    top: 2%;
+                }
+                h6{
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    color: $secondary-color; 
+                }
+                span{
+                    color: $secondary-color;
+                    font-weight: 700;
+                }
+                
+            }
+        }
+    }
+  }
+
+  .cta-cap {
+    padding-top: 10rem;
+    padding-bottom: 13rem;
+    text-align: left;
+    color: #fff;
+    background-image: url("/assets/img/capacitacion_bg_02.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    h3{
+        color: #fff;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: 1.2rem;
+    }
+  }
+
+  .cap-seccion3{
+    h4{
+        padding: 4rem 0 1rem 5rem;
+        font-family: $primary-font;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: $secondary-color;
+        span{
+            
+            font-weight: 700;
+        }
+    }
+    .o-block{
+        background-color: $base-color;
+        color: #fff;
+        padding: 1rem 1.6rem;
+        border-radius: 20px;
+    }
+  }
+
+
+
+
+  footer{
+    background-color: $secondary-color;
+    padding-top: 12em;
+    padding-bottom: 2rem;
+    margin-top: -9rem;
+    h5{
+        color: #fff;
+        font-family: $primary-font;
+        padding-top: 1rem;
+    }
+    ul{
+        &.contact-list{
+            list-style: none;
+            padding-left: 1rem;
+        }
+        li {
+            &.icon-map{
+                vertical-align: top;
+                list-style-image:url('/assets/img/icon-map.png')
+            }
+            &.icon-phone{
+                vertical-align: top;
+                list-style-image:url('/assets/img/icon-cel.png')
+            }
+            color: #fff;
+            font-family: $third-font;
+            font-size: .9rem;
+            line-height: 1.8em;
+            padding: .4rem .1rem;
+        }
+    }
+    
+    
+    .redes{
+        p{
+            color: #fff;
+            padding-top: 1.2rem;
+            font-family: $third-font;
+            font-size: .9rem;
+        }
+        .social-icons li {
+            display: inline;
+            padding: .8em; 
+        }
+        .social-icons li a{
+            display:inline-block;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            font-size: 1em;
+            /*background-color: blueviolet;*/
+         }
+         .social-icon i{
+            color: #fff;
+            line-height: 40px;
+         }
+    }
+    .copyright{
+        margin-top: 2rem;
+        padding: 2rem 0 .5rem 0;
+        border-top: 1px solid #AFA178;
+        p{
+            color: #fff;
+            font-family: $third-font;
+            font-size: .8rem;
+        }
+    }
+    &#landing{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+        margin-top: 0;
+        p{
+            color: #fff;
+            font-family: $third-font;
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+    } 
+  }
+
+  main{
+    .landing-sec1{
+        background-image: url("/assets/img/landing/Grupo-243-1.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 35px;
+        padding: 5em 0;
+        .info-right{
+            h2{
+                color: #686868;
+                font-size: 31px;
+                line-height: 41px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                    color: #FF4D00;
+                    display: block;
+                }
+            }
+            p {
+                color: #686868;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $primary-font;
+            }
+            ul {
+                color: #686868;
+                list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+                li {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+      }
+
+      .landing-sec2{
+        background-color: #082759;
+        padding: 70px 0 200px 0;
+        h2 {
+            color: #ffffff;
+            font-size: 31px;
+            font-weight: 300;
+            span{
+                font-weight: 700;
+            }
+        }
+        .elecciones{
+            margin-top: 40px;
+        }
+        .card{
+            background-color: #082759;
+            border: 1px solid $base-color;
+            margin: 0 1.2rem 3.5rem;
+            padding: 0 15px 15px;
+            .card-body{
+                padding: 0 1rem 1rem 1rem;
+            }
+            img{
+                margin-top: -2.5rem;
+            }
+            .card-title{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 1rem;
+                line-height: 1.7rem;
+                font-weight: 700;
+            }
+            .card-text{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 0.9rem;
+                padding-bottom: 2rem;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            h4{
+                padding: 0.8rem 0;
+            }
+        }
+      }
+
+      .landing-sec3{
+        padding-top: 35px;
+        .container{
+            margin-top: -9rem;
+            background-color: #fff;
+            padding-top: 35px;
+        }
+        h2 {
+            font-size: 31px;
+            color: #FF4D00;
+            margin-bottom: 35px;
+        }
+        .beneficios{
+            ul {
+                list-style: none;
+                max-width: 90%;
+                li {
+                    margin-bottom: 36px;
+                    display: flex;
+                    align-items: center;
+                    color: #686868;
+                    font-size: 20px;
+                    gap: 25px;
+                    font-family: $third-font;
+                }
+            }
+        }
+        .o-block{
+            background-color: $base-color;
+            color: #fff;
+            padding: 30px 0;
+            p {
+                color: #ffffff;
+                font-size: 31px;
+                margin: 0;
+                font-weight: 300;
+                font-family: $primary-font;
+            }
+            a {
+                background-color: #082759;
+                color: #ffffff;
+                padding: 14px 28px;
+                transition: background-color 0.2s;
+                font-size: 14px;
+                font-family: $third-font;
+                font-weight: bold;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+        }
+      }
+      .modalidades{
+        h2 {
+            font-weight: 300;
+            font-size: 50px;
+            color: #686868;
+            margin: 35px 0;
+            span{
+                color: $base-color;
+                font-weight: 400;
+            }
+        }
+        .link-modalidad {
+            box-shadow: 0px 15px 50px rgba(154, 150, 150, 0.1607843137);
+            background-color: #ffffff;
+            padding: 20px 40px;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            cursor: pointer;
+            transition: 0.2s all;
+            margin: 0 15px;
+            h2 {
+                font-size: 41px;
+                font-weight: 300;
+                margin: 5px 0;
+                a {
+                    color: #686868;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        #section-conf{
+            h2 {
+                color: #FF4D00;
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+            p{
+                margin-bottom: 1.5em;
+                font-family: $primary-font;
+                font-size: 24px;
+            }
+            
+        }
+        .diploma{
+            .card{
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1019607843);
+                max-width: 308px;
+                position: relative;
+                padding: 0px 20px 40px 20px;
+                margin: 20px auto;
+                min-height: 240px;
+                border: none;
+                img{
+                    margin-top: -2.5rem;
+                }
+                .card-title{
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 18px;
+                    color: $base-color;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-top: 18px;
+                }
+                .card-text{
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 18px;
+                    color: #686868;
+                    text-align: center;
+                    font-weight: 400;
+                }
+           }
+        }
+        .cta-modalidad{
+            background-image: url("/assets/img/landing/Enmascarar-grupo-25.png");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            padding: 30px 0;
+            margin-top: 50px;
+            p {
+                color: #ffffff;
+                font-size: 31px;
+                margin: 0;
+                font-weight: 300;
+                font-family: $primary-font;
+            }
+            a {
+                background-color: #FF4D00;
+                color: #ffffff;
+                padding: 14px 28px;
+                transition: background-color 0.2s;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        #section-taller{
+            h2 {
+                color: #FF4D00;
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+            p{
+                margin-bottom: 1.5em;
+                font-family: $primary-font;
+                font-size: 24px;
+            }
+            .card-text{
+                font-family: $third-font;
+                font-size: 18px;
+                color: #686868;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+        .cta-modalidad2{
+            background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            padding: 30px 0;
+            margin-top: 50px;
+            p {
+                color: #ffffff;
+                font-size: 31px;
+                margin: 0;
+                font-weight: 300;
+                font-family: $primary-font;
+            }
+            a {
+                background-color: #FF4D00;
+                color: #ffffff;
+                padding: 14px 28px;
+                transition: background-color 0.2s;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        #section-entren{
+            h2 {
+                color: #FF4D00;
+                font-size: 35px;
+                font-weight: bold;
+                margin-bottom: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+            p{
+                margin-bottom: 1.5em;
+                font-family: $primary-font;
+                font-size: 24px;
+            }
+            .card-text{
+                font-family: $third-font;
+                font-size: 18px;
+                color: #686868;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+      }
+      .toggle-modalidades{
+        h2 {
+            font-size: 34px;
+            color: #686868;
+            font-weight: 400;
+            span{
+                color: $base-color;
+                font-weight: 600;
+            }
+        }
+        .accordion-button{
+            font-family: $third-font;
+            background-color: #fff;
+            font-weight: 700;
+        }
+        .accordion-body{
+                margin: 0 20px!important;
+                padding-left: 14px !important;
+                position: relative;
+                margin: 0;
+                &:before {
+                    content: "";
+                    background-image: url(/assets/img/landing/Grupo-119.png);
+                    width: 10px;
+                    height: 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    top: 30%;
+                }
+        }
+      }
+      .final-lp{
+        .info-right {
+            padding-left: 50px;
+            h2 {
+                font-size: 31px;
+                color: #1B1C1E;
+                font-weight: bold;
+                span{
+                    color: $base-color;
+                }
+            }
+            p{
+                color: #686868;
+                line-height: 24px;
+                font-family: $primary-font;
+                font-weight: 400;
+            }
+            ul {
+                list-style-image: url(/assets/img/landing/Grupo-198.png);
+                color: #686868;
+                font-weight: 400;
+                font-family: $primary-font;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+            a {
+                background-color: #FF4D00;
+                color: #ffffff;
+                padding: 14px 28px;
+                transition: background-color 0.2s;
+                font-size: 14px;
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+      }
+      .reclu-sec1{
+        background-image: url("/assets/img/reclutamiento/Enmascarar-grupo-10-1.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 35px;
+        padding: 5em 0;
+        .info-right{
+            h2{
+                color: #686868;
+                font-size: 31px;
+                line-height: 41px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                    color: #FF4D00;
+                    display: block;
+                }
+            }
+            p {
+                color: #686868;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $third-font;
+            }
+            ul {
+                color: #686868;
+                list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+                li {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+      }
+      .reclu-sec2{
+        background-color: #082759;
+        padding: 70px 0 50px 0;
+        h2 {
+            color: #ffffff;
+            font-size: 31px;
+            font-weight: 300;
+            span{
+                font-weight: 700;
+            }
+        }
+        .elecciones{
+            margin-top: 40px;
+        }
+        .card{
+            background-color: #082759;
+            border: 1px solid $base-color;
+            margin: 0 1.2rem 3.5rem;
+            padding: 0 15px 15px;
+            .card-body{
+                padding: 0 1rem 1rem 1rem;
+            }
+            img{
+                margin-top: -2.5rem;
+            }
+            .card-title{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 1rem;
+                line-height: 1.7rem;
+                font-weight: 700;
+            }
+            .card-text{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 0.9rem;
+                padding-bottom: 2rem;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            h4{
+                padding: 0.8rem 0;
+            }
+        }
+      }
+      .text-coberturas{
+        h3{
+            font-size: 31px;
+            color: #686868;
+            text-align: center;
+            font-weight: 300;
+            font-family: $primary-font;
+            span{
+                color: $base-color;
+                font-weight: 700;
+            }
+        }
+        .hover-box-vacantes {
+            transition: all .2s;
+            min-height: 177px !important;
+            background-size: contain !important;
+            position: relative;
+            background-image: url('/assets/img/reclutamiento/Componente-2-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            .et_pb_text_inner {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+            }
+            h4 {
+                color: #FFFFFF;
+                text-align: center;
+                font-family: $third-font;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        .hover-box-gerenciales {
+            transition: all .2s;
+            min-height: 177px !important;
+            background-size: contain !important;
+            position: relative;
+            background-image: url('/assets/img/reclutamiento/Grupo-37.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            .et_pb_text_inner {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+            }
+            h4 {
+                color: #FFFFFF;
+                text-align: center;
+                font-family: $third-font;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        .hover-box-directivos {
+            transition: all .2s;
+            min-height: 177px !important;
+            background-size: contain !important;
+            position: relative;
+            background-image: url('/assets/img/reclutamiento/Grupo-38-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            .et_pb_text_inner {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+            }
+            h4 {
+                color: #FFFFFF;
+                text-align: center;
+                font-family: $third-font;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+        .hover-box-especializados {
+            transition: all .2s;
+            min-height: 177px !important;
+            background-size: contain !important;
+            position: relative;
+            background-image: url('/assets/img/reclutamiento/Grupo-39.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+            .et_pb_text_inner {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+            }
+            h4 {
+                color: #FFFFFF;
+                text-align: center;
+                font-family: $third-font;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+      }
+      .cta-reclu{
+        background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding: 30px 0;
+        margin-top: 50px;
+        p {
+            color: #ffffff;
+            font-size: 31px;
+            margin: 0;
+            font-weight: 300;
+            font-family: $primary-font;
+        }
+        a {
+            background-color: #FF4D00;
+            color: #ffffff;
+            padding: 14px 28px;
+            transition: background-color 0.2s;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .reclu-sec3{
+        h3{
+            span{
+                font-weight: 700;
+            }
+        }
+        ul {
+            color: #686868;
+            list-style-image: url('/assets/img/reclutamiento/Icon-awesome-check-circle.png');
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .reclu-sec4{
+        background-image: url("/assets/img/reclutamiento/Grupo-38-2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 35px;
+        padding: 7.6em 0;
+        .info-right{
+            h2{
+                color: #686868;
+                font-size: 31px;
+                line-height: 41px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                    color: #FF4D00;
+                    display: block;
+                }
+            }
+            p {
+                color: #9c9b9b;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $third-font;
+            }
+            ul {
+                color: #686868;
+                list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+                li {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+      }
+      .maqulp-sec1{
+        background-image: url("/assets/img/maquila/Grupo-97.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding: 6em 0;
+        .info-right{
+            h2{
+                color: #686868;
+                font-size: 31px;
+                line-height: 41px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                    color: #FF4D00;
+                    display: block;
+                }
+            }
+            p {
+                color: #686868;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $third-font;
+            }
+            ul {
+                color: #686868;
+                list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+                li {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+      }
+      .maqulp-sec2{
+        background-color: #082759;
+        padding: 70px 0 50px 0;
+        h2 {
+            color: #ffffff;
+            font-size: 31px;
+            font-weight: 300;
+            margin-bottom: 45px;
+            span{
+                font-weight: 700;
+            }
+        }
+        .elecciones{
+            margin-top: 40px;
+        }
+        .card{
+            background-color: #082759;
+            border: 1px solid $base-color;
+            margin: 0 1.2rem 3.5rem;
+            padding: 0 15px 15px;
+            .card-body{
+                padding: 0 1rem 1rem 1rem;
+            }
+            img{
+                margin-top: -2.5rem;
+            }
+            .card-title{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 1rem;
+                line-height: 1.7rem;
+                font-weight: 700;
+            }
+            .card-text{
+                color: #fff;
+                font-family: $third-font;
+                font-size: 0.9rem;
+                padding-bottom: 2rem;
+                b{
+                    color: $secondary-color;
+                }
+            }
+            h4{
+                padding: 0.8rem 0;
+            }
+        }
+      }
+      .maqulp-sec3{
+        .o-block{
+            background-color: $base-color;
+            color: #fff;
+            padding: 30px 0;
+            margin-top: -4.5rem;
+            h2 {
+                color: #ffffff;
+                font-size: 31px;
+                margin: 0;
+                font-weight: 300;
+                font-family: $primary-font;
+                span{
+                    font-weight: 600;
+                }
+            }
+            p{
+                margin-top: 20px;
+            }
+            a {
+                background-color: #082759;
+                color: #ffffff;
+                padding: 14px 28px;
+                transition: background-color 0.2s;
+                font-size: 14px;
+                font-family: $third-font;
+                font-weight: bold;
+                text-decoration: none;
+                
+            }
+        }
+        .toggle-modalidades{
+            h2 {
+                font-size: 34px;
+                color: #686868;
+                font-weight: 400;
+                span{
+                    color: $base-color;
+                    font-weight: 600;
+                }
+            }
+            .accordion-button{
+                font-family: $third-font;
+                background-color: #fff;
+                font-weight: 700;
+                color: #686868;
+            }
+            .accordion-body{
+                    margin: 0 20px!important;
+                    padding-left: 14px !important;
+                    position: relative;
+                    margin: 0;
+                    ul {
+                        padding: 0 0 0px 20px;
+                        li {
+                            list-style: none;
+                            position: relative;
+                            margin-bottom: 10px;
+                            list-style-image: url(/assets/img/maquila/Icon-awesome-check-circle.png);
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        background-image: url('');
+                    }
+            }
+        }
+        .alcances{
+            h4{
+                font-family: $primary-font;
+                    color: $base-color;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    border-right: 2px solid $base-color;
+                    padding-right: 2rem;
+            }
+            ul{
+                &.alcances-list{
+                    list-style-image: url('/assets/img/list-icon.png');
+                    padding-top: 2px;
+                }
+                li{
+                    color: $secondary-color;
+                    font-family: $third-font;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    padding: .4rem;
+                    margin-bottom: 10px;
+                    ul{
+                        &.alcances-sublist{
+                            list-style-image: url('/assets/img/maquila/Icon-awesome-check-circle.png');
+                            padding-top: 2px;
+                        }
+                        li{
+                            color: #686868;
+                            font-weight: 400;
+                            font-size: .9rem;
+                        }
+                    }
+                } 
+            }
+        }
+
+      }
+      .maqulp-sec4{
+        .left-maquila-contar{
+            
+            h3 {
+                font-size: 24px;
+                color: #686868;
+                font-family: 'Oswald';
+                margin-bottom: 30px;
+                font-weight: 300;
+            }
+            ul {
+                padding-bottom: 1em;
+                li {
+                    margin-bottom: 15px;
+                    list-style-image: url(/assets/img/maquila/Icon-awesome-check-circle.png);
+                    font-size: 16px;
+                    color: #686868;
+                }
+            }
+         .b-01{
+            border-top: 1px solid #FF4D00;
+            padding-top: 15px;
+         }
+         .o-block{
+            background-color: $base-color;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+        }   
+        }
+      }
+      .maqulp-sec5{
+        h3{
+            color: #686868; 
+            font-weight: 400; 
+            font-family: $primary-font;
+            span{
+                color: $base-color;
+                font-weight: 700;
+            }
+        }
+        ul {
+            color: #686868;
+            list-style-image: url('/assets/img/reclutamiento/Icon-awesome-check-circle.png');
+            li {
+                margin-bottom: 15px;
+            }
+        }
+        .row{
+            padding: 3rem;
+        }
+      }
+      .cta-maqulp{
+        background-image: url("/assets/img/landing/Enmascarar-grupo-24.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding: 30px 0;
+        margin-top: 50px;
+        p {
+            color: #ffffff;
+            font-size: 31px;
+            margin: 0;
+            font-weight: 300;
+            font-family: $primary-font;
+            span{
+                font-weight: 700;
+            }
+        }
+        a {
+            background-color: #FF4D00;
+            color: #ffffff;
+            padding: 14px 28px;
+            transition: background-color 0.2s;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+      }
+      .maqulp-sec6{
+        h2{
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 31px;
+            color: $base-color;
+            padding-bottom: 20px;
+        }
+        .card{
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1019607843);
+            max-width: 308px;
+            position: relative;
+            padding: 0px 20px 40px 20px;
+            margin: 20px auto;
+            min-height: 240px;
+            border: none;
+            .card-title{
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                color: $base-color;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 18px;
+                padding-top: 20px;
+            }
+            .card-text{
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                color: #686868;
+                text-align: center;
+                font-weight: 400;
+            }
+            .card-body{
+                p{
+                    font-weight: 700;
+                    &.numero{
+                        background-color: #FF4D00;
+                        font-size: 32px;
+                        border-radius: 50%;
+                        padding: 0;
+                        position: absolute;
+                        top: -15%;
+                        display: grid;
+                        left: 40%;
+                        place-items: center;
+                        width: 80px;
+                        height: 80px;
+                        color: #ffffff;
+                    }
+                }
+            }
+            
+       }
+      }
+      .maqulp-sec7{
+        background-image: url("/assets/img/maquila/Grupo-102.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 35px;
+        padding: 7.6em 0;
+        .info-right{
+            h2{
+                color: #686868;
+                font-size: 31px;
+                line-height: 41px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                    color: #FF4D00;
+                    display: block;
+                }
+            }
+            p {
+                color: #9c9b9b;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $third-font;
+            }
+            ul {
+                color: #686868;
+                list-style-image: url(https://site.marketeros.com.co/cerberus-landing/wp-content/uploads/2024/02/Grupo-119.png);
+                li {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: $primary-font;
+                }
+            }
+        }
+      }
+  }
+
+
+  @media (min-width: 992px) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        .container {
+            border-bottom: 1px solid #fafafa;
+            padding-bottom: 1.2rem;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+            transition: font-size 0.3s ease-in-out;
+        }
+        .navbar-brand img {
+            height: 4.5rem;
+            transition: height 0.3s ease-in-out;
+        }
+        &.navbar-shrink {
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+            background-color: #FFF;
+            .navbar-nav .nav-item .nav-link {
+                color: #212529;
+            }
+            .navbar-nav .nav-item .nav-link:hover {
+                color: $base-color;
+              }
+        }
+        .navbar-shrink .navbar-brand {
+            font-size: 1.25em;
+        }
+        .navbar-shrink .navbar-brand svg{
+            height: 1.5rem;
+        }
+        .navbar-shrink .navbar-brand img {
+            height: 1.5rem;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 1rem;
+        }
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0;
+        }
+        .dropdown-item {
+            text-transform: capitalize;
+        }
+        #logo-web{
+            &.logo-id{
+                display: none;
+            }
+        }
+        #logo-web-alt{
+            &.logo-id-alt{
+                display: block;
+            }
+            &.logo-id-alt2{
+                display: none;
+            }
+        }
+        #second-row{
+            &.secondRow{
+                display: none;
+            }
+        } 
+
+    }
+    
+  }
+
+  @media (min-width: 768px) {
+
+    header{
+        &.masthead {
+            padding-top: 17rem;
+            padding-bottom: 12.5rem;
+        }
+        &.masthead .masthead-subheading {
+            font-size: 1.3rem;
+            line-height: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        &.masthead {
+            h1{
+                &.masthead-heading {
+                    color: #fff;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    line-height: 4.5rem;
+                    margin-bottom: 4rem;
+                    span{
+                        background-color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-home{
+        .row-cards{
+            margin-top: -10rem;
+            margin-bottom: 1rem;
+            .services{
+                padding: 0;
+                /*background: #FFF;*/
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+                transition: 0.5s ease-in-out;
+                &:hover{
+                    &:before{
+                        opacity: 1;
+                    }
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top, rgba(255,70,0,0.8), rgba(240,70,5,0.1));
+                    z-index: 2;
+                    transition: 0.5s all;
+                    opacity: 0;
+                }
+                .info{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 20px;
+                    z-index: 4;
+                    transition: 0.5s all;
+                    &:hover{
+                        transform: translateY(-20px);
+                    }
+                    h4{
+                        color: #FFF;
+                        font-family: $third-font;
+                        font-weight: 700;
+                    }
+                    .btn{
+                        color: #FFF;
+                        font-family: $third-font;
+                        padding: 0;
+                    }
+                }
+            }
+            
+        }
+        h3{
+            font-family: $primary-font;
+            color: #686868;
+            font-weight: 400;
+        }
+        h4{
+            font-family: $primary-font;
+            color: $base-color;
+        }
+        h5{
+            font-family: $primary-font;
+            color: $secondary-color;
+            font-size: 1.9rem;
+            border-right: 2px solid $secondary-color;
+            padding-right: 2rem;
+        }
+        .valores-list{
+            ul{
+                list-style-image: url('/assets/img/list-icon.png');
+                padding-top: 2px;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+  }
+
+  @media (max-width: 480px) { 
+
+    #mainNav .navbar-brand img {
+        height: 3.5rem;
+        
+    }
+    #mainNav .second-row{
+        display: none;
+    }
+
+    #mainNav {
+        .navbar-brand{
+            #logo-web-alt{
+                display: none;
+            }
+        }
+    }
+
+    header{
+        &.masthead-page {
+            height: 60vh;
+            min-height: 500px;
+            text-align: left;
+            color: #fff; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &.masthead .masthead-subheading {
+            font-size: 1rem;
+            line-height: 1.1em;
+            margin-bottom: 25px;
+            font-family: $third-font;
+            
+        }
+        &.masthead {
+            h1{
+                &.masthead-heading {
+                    color: #fff;
+                    font-size: 2rem;
+                    line-height: 1.2em;
+                    margin-bottom: 2rem;
+                    span{
+                        background-color: $base-color;
+                    }
+                }
+            }
+        }
+        &.masthead-page .masthead-subheading {
+            font-size: 1rem;
+            line-height: 1.1em;
+            margin-bottom: 25px;
+            font-family: $third-font;
+        }
+        &.masthead-page .masthead-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.4em;
+            margin-bottom: 2rem;
+            font-family: $primary-font;
+            span{
+                background-color: $base-color;
+            }
+        }
+        &.masthead-page .masthead-heading-blog {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.3em;
+            margin-bottom: 2rem;
+            font-family: $primary-font;
+            span{
+                background-color: $base-color;
+            }
+        }
+        &.masthead-page .masthead-subheading-blog{
+            font-size: 1rem;
+            line-height: 1.1em;
+            margin-bottom: 15px;
+            font-family: $third-font;
+        }
+        &#quienes-somos{
+            background-image: url("/assets/img/quienes_somos_bg.jpg");
+        }
+        &#servicios{
+            background-image: url("/assets/img/servicios_bg.jpg");
+        }
+        &#casos-exito{
+            background-image: url("/assets/img/casos_exito_bg.jpg");
+        }
+        &#envia-cv{
+            background-image: url("/assets/img/envia-tu-cv_bg.jpg");
+        }
+        &#maquila-nomina{
+            background-image: url("/assets/img/maquila-nomina_bg.jpg");
+        }
+        &#reclutamiento{
+            background-image: url("/assets/img/reclutamiento_bg.jpg");
+        }
+        &#capacitacion{
+            background-image: url("/assets/img/capacitacion_bg.jpg");
+        }
+        &.mastheading {
+            height: 85vh;
+            min-height: 1150px;
+            background-image: url('/assets/img/landing/Grupo-243.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 5px;
+            h1{
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 50px;
+                margin-bottom: 2rem;
+                font-family: $primary-font;
+                color: #FFF;
+            }
+            .block-form-lp {
+                box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 30px;
+                max-width: 450px;
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    color: #686868;
+                    strong {
+                        color: #FF4D00;
+                        font-weight: bold;
+                    }
+                }
+                input[type=text]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                input[type=email]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #686868 !important;
+                    height: 50px;
+                }
+            }
+            
+        }
+        &.masthead-reclutamiento{
+            height: 80vh;
+            min-height: 1150px;
+            background-image: url('/assets/img/reclutamiento/Grupo-38.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 35px;
+            h1{
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1.2em;
+                margin-bottom: 2rem;
+                font-family: $primary-font;
+                color: #FFF;
+            }
+            p{
+                line-height: 24px;
+                font-family: $third-font;
+                font-size: 19px;
+                letter-spacing: 1px;
+                line-height: 24px;
+                text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+                color: #fff;
+            }
+            .block-form-lp {
+                box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 30px;
+                max-width: 450px;
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    color: #686868;
+                    strong {
+                        color: #FF4D00;
+                        font-weight: bold;
+                    }
+                }
+                input[type=text]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                input[type=email]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #686868 !important;
+                    height: 50px;
+                }
+                p{
+                    font-size: 12px;
+                    color: #1B1C1E;
+                    font-weight: 400;
+                    font-family: $primary-font;
+                    text-shadow: none;
+                }
+                a{
+                    color: $base-color;
+                    text-decoration: none;
+                    text-shadow: none;
+                }
+            }
+        }
+        &.masthead-maquila{
+            height: 80vh;
+            min-height: 1150px;
+            background-image: url('/assets/img/maquila/Grupo-95.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 35px;
+            h1{
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1.2em;
+                text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.4);
+                font-family: $primary-font;
+                color: #FFF;
+            }
+            .block-form-lp {
+                box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1607843137);
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 30px;
+                max-width: 450px;
+                h2 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    color: #686868;
+                    strong {
+                        color: #FF4D00;
+                        font-weight: bold;
+                    }
+                }
+                input[type=text]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                input[type=email]{
+                    height: 40px;
+                    background-color: transparent;
+                    border-bottom: 1px solid #686868 !important;
+                    border: none;
+                    width: 100%;
+                }
+                textarea {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #686868 !important;
+                    height: 50px;
+                }
+                p{
+                    font-size: 12px;
+                    color: #1B1C1E;
+                    font-weight: 400;
+                    font-family: $primary-font;
+                    text-shadow: none;
+                }
+                a{
+                    color: $base-color;
+                    text-decoration: none;
+                    text-shadow: none;
+                }
+            }
+        } 
+    
+      }
+    
+    .service-home{
+        .row-cards{
+            margin-top: -6rem;
+            margin-bottom: 1rem;
+            .services{
+                padding: 0;
+                /*background: #FFF;*/
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+                transition: 0.5s ease-in-out;
+                &:hover{
+                    &:before{
+                        opacity: 1;
+                    }
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top, rgba(255,70,0,0.8), rgba(240,70,5,0.1));
+                    z-index: 2;
+                    transition: 0.5s all;
+                    opacity: 0;
+                }
+                .info{
+                    position: absolute;
+                    bottom: 15px;
+                    left: 20px;
+                    z-index: 4;
+                    transition: 0.5s all;
+                    &:hover{
+                        transform: translateY(-20px);
+                    }
+                    h4{
+                        color: #FFF;
+                        font-family: $third-font;
+                        font-weight: 700;
+                        padding-left: 0;
+                    }
+                    .btn{
+                        color: #FFF;
+                        font-family: $third-font;
+                        padding: 0;
+                    }
+                }
+            }
+            
+        }
+        .row{
+            .services{
+                margin-top: 1rem;
+                
+            }
+            h3{
+                font-family: $primary-font;
+                color: #686868;
+                font-weight: 400;
+            }
+            h4{
+                font-family: $primary-font;
+                color: $base-color;
+                padding-left: 15px;
+            }
+            h5{
+                font-family: $primary-font;
+                color: $secondary-color;
+                font-size: 1.9rem;
+                border-right: 2px solid $secondary-color;
+                padding-right: 2rem;
+            }
+        }
+        .valores-list{
+            ul{
+                list-style-image: url('/assets/img/list-icon.png');
+                padding-top: 2px;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    } 
+
+    .otros-servicios{
+        .bene{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .casos-seccion2 {
+        h3 {
+            padding-top: 4rem;
+            font-size: 1.2rem;
+        }
+        .text-clients {
+            h4 {
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .capModalidades-ext {
+        padding: 1rem 1.2rem;
+        .cta-cap03 .o-block {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    }
+
+    .enviar-cv {
+        .card {
+        padding: 1rem .7rem;
+        .card-body{
+            p{
+                font-size: 0.8rem;
+            }
+        }
+      }
+
+      form {
+        .custom-input-file {
+            .btn {
+                position: absolute;
+                right: 45px;
+                border-radius: 50px !important;
+                border: 1px solid #072348 !important;
+                font-size: 1.3rem;
+                line-height: 0.7em;
+                color: #072348;
+                padding: 0.65rem;
+                margin-top: 22px;
+               }
+        }
+      }
+    }
+
+    .capacitacion-modalidades {
+        .modalidades-tabs {
+            .card {
+                height: 320px;
+            }
+        }
+    }
+
+    .nomina-content {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-bottom: 1.6rem;
+        }
+        .o-block {
+            padding: .5rem .4rem;
+            padding: 0.5rem 0.4rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        .beneficios {
+            #sec-02 {
+                margin-top: 0rem;
+            }
+            #sec-03 {
+                margin-top: 0rem;
+            }
+        }
+        .beneficios2 {
+            margin-top: 1rem;
+            .o-block {
+                margin-top: 0;
+                /* margin-left: 2rem; */
+                margin: 0 .3rem;
+            }
+        }
+        #serv-nomina {
+            padding-top: 3rem;
+            #nomina-serv-01 {
+                margin-left: 0rem;
+                margin-bottom: 2rem;
+            }
+            #nomina-serv-04 {
+                margin-right: 0rem;
+            }
+        }
+    }
+
+    .maquila-beneficios h3 {
+        font-size: 2rem;
+    }
+
+    .header-contacto h2 {
+        color: #FF4D00;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: .5rem 0;
+    }
+
+    .reclutamiento-seccion2 {
+        .o-block {
+            padding: 1rem 1rem;
+            margin-top: 0rem;
+        }
+    }
+
+    .reclutamiento-seccion3 {
+        #contenido01 {
+            margin-left: 0rem;
+        }
+    }
+
+    .reclutamiento-content {
+        h3 {
+            font-size: 1.6rem;
+        }
+    }
+    
+    .contacto {
+        p{
+            width: 100%;
+        }
+        .card {
+            padding: 1rem 1.2rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+
+    footer{
+        .copyright{
+            p{
+                text-align: center;
+            }
+            img{
+                margin: 0 auto;
+                float: none !important;
+                padding: 15px 0;
+            }
+        }
+    }
+
+    main {
+        .landing-sec1 {
+            background-position: center right;
+        }
+        .maqulp-sec1{
+            background-position: center right;
+        }
+        .maqulp-sec7 {
+            background-position: center right;
+        }
+        .reclu-sec1{
+            background-position: center right;
+        }
+        .text-coberturas {
+            .hover-box-vacantes{
+                margin-bottom: 10px;
+            }
+            .hover-box-gerenciales{
+                margin-bottom: 10px;
+            }
+            .hover-box-directivos{
+                margin-bottom: 10px;
+            }
+            .hover-box-especializados{
+                margin-bottom: 10px;
+            }
+        }
+        .reclu-sec4{
+            background-position: center right;
+            padding: 4.6em 0;
+        }
+    }
+
+    .display-7{
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.3em;
+        padding: 35px 0;
+    }
+    
+  
+  }
+
+  .float_buttons_div {
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    z-index: 10;
+  }
+  
+  .float_buttons_div li {
+    list-style: none;
+    margin: 15px 0px;
+  }
+  
+  .float_buttons_div li a i {
+    text-decoration: none;
+    padding: .3em;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 50px;
+    font-weight: bold;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .float_buttons_div .phone-icon {
+    background-color: #092F57;
+    border: 1px solid #092F57;
+    -webkit-box-shadow: 2px 2px 50px #333;
+            box-shadow: 2px 2px 50px #333;
+    /* Lo ocultamos solo en vista de escritorio */
+    visibility: hidden;
+  }
+  
+  .float_buttons_div .whatsapp-icon {
+    background-color: #25d366;
+    border: 1px solid #25d366;
+    -webkit-box-shadow: 2px 4px 20px #333;
+            box-shadow: 2px 4px 20px #333;
+  }
+
+.preblog{
+    h2{
+        color: $base-color;
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+    ul{
+        list-style-image: url('/assets/img/list-icon.png');
+        padding-top: 2px;
+        li{
+            margin-bottom: 10px;
+            font-size: 1.7rem;
+            color: $text-color;
+        }
+    }
+}
+
+.blog {
+    margin-bottom: 1rem;
+    .card{
+        .card-title{
+            font-family: "Oswald", sans-serif;
+            color: #072348;
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: #fff;
+        }
+        .card-text{
+            color: $text-color;
+        }
+        .btn-blog{
+            background-color: transparent;
+            border-color: $base-color;
+            color: $base-color;
+            font-family: "Oswald", sans-serif;
+        }
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    span{
+        color: $base-color;
+    }
+    .btn-primary-blog{
+        background-color: $base-color;
+        border-color: $base-color;
+        color: #ffffff;
+        border-radius: 30px;
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 1em;
+        padding: 15px 0;
+    }
+} 
+
+.single-post {
+    margin-bottom: 1rem;
+    .card-header{
+        background-color: #FFF;
+        color: $base-color;
+        font-family: $primary-font;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    ul{
+        li{
+            a{
+                color: #1B1C1E;
+            }
+            a:link { 
+                text-decoration: none; 
+            }
+        }
+    }
+    p{
+        font-weight: 400;
+        font-family: $third-font;
+        color: $text-color;
+    }
+    span{
+        color: $base-color;
+        font-family: $primary-font;
+        font-size: 1.6rem;
+        line-height: 1.1em;
+    }
+    ul li{
+        line-height: 1.2em;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: $text-color;
+        font-family: $third-font;
+    }
+    .btn-primary-blog{
+        background-color: $base-color;
+        border-color: $base-color;
+        color: #ffffff;
+        border-radius: 30px;
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 1em;
+        padding: 15px 0;
+    }
+    .titulo-1{
+        color: $base-color;
+        font-weight: 500;
+        font-family: $primary-font;
+    }
+    .display-7{
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        padding: 15px 0;
+    }
+    .display-8{
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.3em;
+    }
+    .bloque-blog-final{
+        p{
+            font-size: 1.8rem;
+            margin: 0 15%;
+        }
+    }
+}
