@@ -100,7 +100,9 @@
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo electrónico*">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="number" class="form-control" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Telefono*">
+                                    <!--<input type="number" class="form-control" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Telefono*">-->
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                    <small class="form-text">Ejemplo: 123-456-7890</small>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="puesto" placeholder="Puesto*">
@@ -348,44 +350,69 @@
         
         <script>
         // Handle form submission
-        $("#contactForm").submit(function(event) {
-            event.preventDefault();
-                
-                const formData = {
-                firstname: $("#firstname").val(),
-                lastname: $("#lastname").val(),
-                email: $("#email").val(),
-                phone: $("#phone").val(),
-                company: $("#company").val(),
-                //website: $("#website").val(),
-                puesto: $('#puesto').val(),
-                giro: $('#giro').val(),
-                message: $('#message').val(),
-                };
-                
-                console.log(formData);
-    
-                // Send the form data to the PHP script for processing
-                $.ajax({
-                    url: "submit_form_landing_v2.php", // PHP script to handle the request
-                    type: "POST",
-                    data: formData,
-                    dataType: "json",
-                    beforeSend: function(){
-                                $('.submitBtn').attr("disabled","disabled");
-                                $('.modal-body').css('opacity', '.5');
-                            },
-                    success: function(response) {
-                        alert('¡Gracias por enviar tu solicitud, en breve nos pondremos en contacto!');
-                        //$(location).attr('href','https://cerberusconsulting.mx/');
-                    },
-                    error: function(error) {
-                        alert("Error: " + error.responseText);
-                    },
-                });
-                
+        $(document).ready(function() {
+            // Dominios a bloquear
+            const blockedDomains = ["google.com", "outlook.com", "hotmail.com", "yahoo.com.mx"];
             
+            //comenzamos con el envio de formulario
+            $("#contactForm").submit(function(event) {
+            event.preventDefault();
+
+                // Obtiene el valor del campo de correo electrónico
+                const email = $("#email").val();
+            
+                // Extrae el dominio del correo electrónico
+                const domain = email.split("@")[1];
+
+                // Verifica si el dominio está en la lista de dominios bloqueados
+                if (blockedDomains.includes(domain)) {
+                  // Evita el envío del formulario
+                  event.preventDefault();
+                  // Muestra un mensaje de error
+                  alert("Este dominio de correo electrónico no está permitido.\nPara ofrecerte un servicio adecuado, únicamente aceptamos correos corporativos.\nNo se permiten cuentas personales como Gmail, Hotmail, Outlook, Yahoo, entre otros");
+                }
+                else{
+
+                    const formData = {
+                    firstname: $("#firstname").val(),
+                    lastname: $("#lastname").val(),
+                    email: $("#email").val(),
+                    phone: $("#phone").val(),
+                    company: $("#company").val(),
+                    //website: $("#website").val(),
+                    puesto: $('#puesto').val(),
+                    giro: $('#giro').val(),
+                    message: $('#message').val(),
+                    };
+                    
+                    //console.log(formData);
+        
+                    // Send the form data to the PHP script for processing
+                    $.ajax({
+                        url: "submit_form_landing_v2.php", // PHP script to handle the request
+                        type: "POST",
+                        data: formData,
+                        dataType: "json",
+                        beforeSend: function(){
+                                    $('.submitBtn').attr("disabled","disabled");
+                                    $('.modal-body').css('opacity', '.5');
+                                },
+                        success: function(response) {
+                            console.log(response);
+                            alert('¡Gracias por enviar tu solicitud, en breve nos pondremos en contacto!');
+                            //$(location).attr('href','https://cerberusconsulting.mx/');
+                        },
+                        error: function(error) {
+                            alert("Error: " + error.responseText);
+                        },
+                    });
+
+                }
+            
+            });
         });
+        
+        
         </script>
         
         <script src="/assets/js/scripts.js"></script>

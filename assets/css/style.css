@@ -453,6 +453,13 @@ header.masthead-maquila .block-form-lp input[type=number] {
   border: none;
   width: 100%;
 }
+header.masthead-maquila .block-form-lp input[type=tel] {
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid #686868 !important;
+  border: none;
+  width: 100%;
+}
 header.masthead-maquila .block-form-lp textarea {
   background-color: transparent;
   border: none;
@@ -586,10 +593,6 @@ section {
   width: 100%;
 }
 .contacto form input[type=email] {
-  padding: 15px;
-  width: 100%;
-}
-.contacto form input[type=tel] {
   padding: 15px;
   width: 100%;
 }
