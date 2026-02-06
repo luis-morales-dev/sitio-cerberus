@@ -596,6 +596,10 @@ section {
   padding: 15px;
   width: 100%;
 }
+.contacto form input[type=tel] {
+  padding: 15px;
+  width: 100%;
+}
 .contacto form .form-label {
   margin-bottom: 0rem;
   padding-left: 1rem;
